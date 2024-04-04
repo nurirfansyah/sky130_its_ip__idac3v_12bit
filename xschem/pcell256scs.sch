@@ -59,9 +59,9 @@ N -100 240 220 240 {
 lab=sw_bn}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 60 -30 0 0 {name=M1
 W=6
-L=1
+L=0.5
 nf=1
-mult=1
+mult=256
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -73,9 +73,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 60 80 0 0 {name=M2
 W=12
-L=1
+L=0.5
 nf=1
-mult=1
+mult=256
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -87,9 +87,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 60 190 0 0 {name=M3
 W=4
-L=1
+L=0.5
 nf=1
-mult=1
+mult=256
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -106,9 +106,9 @@ C {devices/ipin.sym} -100 -120 0 0 {name=p4 lab=avdd}
 C {devices/opin.sym} 140 280 0 0 {name=p5 lab=iout}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 260 190 0 0 {name=M4
 W=4
-L=1
+L=0.5
 nf=1
-mult=1
+mult=256
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

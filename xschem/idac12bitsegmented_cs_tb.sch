@@ -204,14 +204,14 @@ lab=d9}
 N 90 110 120 110 {
 lab=d10}
 N 90 130 120 130 {
-lab=d5}
+lab=d11}
 C {devices/vsource.sym} -170 -90 0 0 {name=V1 value=3.3 savecurrent=false}
 C {devices/vsource.sym} -90 -90 0 0 {name=V2 value=1.8 savecurrent=false}
 C {devices/gnd.sym} 40 230 0 0 {name=l1 lab=GND}
-C {devices/isource.sym} 480 -20 0 0 {name=I0 value=100u}
-C {devices/vsource.sym} -610 -270 0 0 {name=V3 value="PULSE(0 1.8 50n 5n 5n 8u 16u)"}
-C {devices/vsource.sym} -610 -160 0 0 {name=V4 value="PULSE(0 1.8 50n 5n 5n 16u 32u)"}
-C {devices/vsource.sym} -610 -50 0 0 {name=V5 value="PULSE(0 1.8 50n 5n 5n 32u 64u)"}
+C {devices/isource.sym} 480 -20 0 0 {name=I0 value=10u}
+C {devices/vsource.sym} -610 -270 0 0 {name=V3 value="PULSE(1.8 0 50n 5n 5n 1600n 3200n)"}
+C {devices/vsource.sym} -610 -160 0 0 {name=V4 value="PULSE(1.8 0 50n 5n 5n 3200n 6400n)"}
+C {devices/vsource.sym} -610 -50 0 0 {name=V5 value="PULSE(1.8 0 50n 5n 5n 6400n 12800n)"}
 C {devices/vsource.sym} -20 -40 0 0 {name=V6 value=0 savecurrent=false}
 C {devices/lab_pin.sym} 50 -90 0 0 {name=p1 sig_type=std_logic lab=d0}
 C {devices/lab_pin.sym} 50 -70 0 0 {name=p2 sig_type=std_logic lab=d1}
@@ -232,13 +232,11 @@ value=".lib \\\\$::SKYWATER_MODELS\\\\/sky130.lib.spice tt
 }
 C {devices/code.sym} 90 -570 0 0 {name=spice1 only_toplevel=false value="
 .option wnflag=0
-.option savecurrents
+.save v(out) v(outn)
 .control
-save all
-tran 100n 64u
+tran 1u 12.8u
 plot v(out) v(outn)
-write currentmirrortb.raw
-op
+write currentmirrortb.raw v(out) v(outn)
 .endc
 "}
 C {devices/lab_wire.sym} 540 -150 0 0 {name=p7 sig_type=std_logic lab=out}
@@ -254,9 +252,9 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_wire.sym} 510 -130 0 0 {name=p8 sig_type=std_logic lab=outn}
-C {devices/vsource.sym} -610 -610 0 0 {name=V9 value="PULSE(0 1.8 50n 5n 5n 1u 2u)"}
-C {devices/vsource.sym} -610 -500 0 0 {name=V10 value="PULSE(0 1.8 50n 5n 5n 2u 4u)"}
-C {devices/vsource.sym} -610 -390 0 0 {name=V11 value="PULSE(0 1.8 50n 5n 5n 4u 8u)"}
+C {devices/vsource.sym} -610 -610 0 0 {name=V9 value="PULSE(1.8 0 50n 5n 5n 200n 400n)"}
+C {devices/vsource.sym} -610 -500 0 0 {name=V10 value="PULSE(1.8 0 50n 5n 5n 400n 800n)"}
+C {devices/vsource.sym} -610 -390 0 0 {name=V11 value="PULSE(1.8 0 50n 5n 5n 800n 1600n)"}
 C {devices/lab_pin.sym} -560 -660 0 1 {name=p9 sig_type=std_logic lab=d0}
 C {devices/lab_pin.sym} -560 -550 0 1 {name=p10 sig_type=std_logic lab=d1}
 C {devices/lab_pin.sym} -560 -440 0 1 {name=p11 sig_type=std_logic lab=d2}
@@ -264,15 +262,15 @@ C {devices/lab_pin.sym} 90 -30 0 0 {name=p12 sig_type=std_logic lab=d3}
 C {devices/lab_pin.sym} 90 -10 0 0 {name=p13 sig_type=std_logic lab=d4}
 C {devices/lab_pin.sym} 90 10 0 0 {name=p14 sig_type=std_logic lab=d5}
 C {idac12bitsegmented.sym} 270 0 0 0 {name=x2}
-C {devices/vsource.sym} -380 -260 0 0 {name=V12 value="PULSE(0 1.8 50n 5n 5n 512u 1024u)"}
-C {devices/vsource.sym} -380 -150 0 0 {name=V13 value="PULSE(0 1.8 50n 5n 5n 1024u 2048u)"}
-C {devices/vsource.sym} -380 -40 0 0 {name=V14 value="PULSE(0 1.8 50n 5n 5n 2048u 4096u)"}
+C {devices/vsource.sym} -380 -260 0 0 {name=V12 value="PULSE(1.8 0 50n 5n 5n 102.4u 204.8u)"}
+C {devices/vsource.sym} -380 -150 0 0 {name=V13 value="PULSE(1.8 0 50n 5n 5n 204.8u 409.6u)"}
+C {devices/vsource.sym} -380 -40 0 0 {name=V14 value="PULSE(0 1.8 50n 5n 5n 409.6uu 819.2u)"}
 C {devices/lab_pin.sym} -330 -310 0 1 {name=p15 sig_type=std_logic lab=d9}
 C {devices/lab_pin.sym} -330 -200 0 1 {name=p16 sig_type=std_logic lab=d10}
 C {devices/lab_pin.sym} -330 -90 0 1 {name=p17 sig_type=std_logic lab=d11}
-C {devices/vsource.sym} -380 -600 0 0 {name=V15 value="PULSE(0 1.8 50n 5n 5n 64u 128u)"}
-C {devices/vsource.sym} -380 -490 0 0 {name=V16 value="PULSE(0 1.8 50n 5n 5n 128u 256u)"}
-C {devices/vsource.sym} -380 -380 0 0 {name=V17 value="PULSE(0 1.8 50n 5n 5n 256u 512u)"}
+C {devices/vsource.sym} -380 -600 0 0 {name=V15 value="PULSE(1.8 0 50n 5n 5n 12.8u 25.6u)"}
+C {devices/vsource.sym} -380 -490 0 0 {name=V16 value="PULSE(1.8 0 50n 5n 5n 25.6u 51.2u)"}
+C {devices/vsource.sym} -380 -380 0 0 {name=V17 value="PULSE(1.8 0 50n 5n 5n 51.2u 102.4u)"}
 C {devices/lab_pin.sym} -330 -650 0 1 {name=p18 sig_type=std_logic lab=d6}
 C {devices/lab_pin.sym} -330 -540 0 1 {name=p19 sig_type=std_logic lab=d7}
 C {devices/lab_pin.sym} -330 -430 0 1 {name=p20 sig_type=std_logic lab=d8}

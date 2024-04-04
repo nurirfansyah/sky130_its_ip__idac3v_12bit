@@ -89,20 +89,10 @@ N -980 250 -930 250 {
 lab=pbias}
 N -980 270 -930 270 {
 lab=pcbias}
-N -950 290 -950 370 {
-lab=iref}
-N -980 370 -950 370 {
-lab=iref}
 N -980 350 -930 350 {
 lab=ncbias}
-N -980 390 -930 390 {
+N -980 370 -930 370 {
 lab=nbias}
-N -980 290 -950 290 {
-lab=iref}
-N -950 370 -950 420 {
-lab=iref}
-N -950 420 -950 480 {
-lab=iref}
 N -730 -160 -470 -160 {
 lab=d0}
 N -730 50 -470 50 {
@@ -387,6 +377,13 @@ N -120 970 -120 1190 {
 lab=ioutn}
 N -120 1190 -120 1420 {
 lab=ioutn}
+N -980 460 -950 460 {}
+N -1320 460 -1280 460 {}
+N -1290 290 -1280 290 {}
+N -1290 290 -1290 420 {}
+N -1290 420 -960 420 {}
+N -960 420 -960 460 {}
+N -1290 390 -1280 390 {}
 C {devices/ipin.sym} -730 -200 0 0 {name=p1 lab=avdd}
 C {devices/ipin.sym} -1370 -160 0 0 {name=p3 lab=din0}
 C {devices/ipin.sym} -730 -120 0 0 {name=p5 lab=idir_sel}
@@ -394,19 +391,17 @@ C {devices/ipin.sym} -730 -60 0 0 {name=p8 lab=avss}
 C {devices/ipin.sym} -1370 -70 0 0 {name=p9 lab=din1}
 C {devices/ipin.sym} -1370 20 0 0 {name=p10 lab=din2}
 C {devices/opin.sym} -80 -200 0 0 {name=p11 lab=iout}
-C {n_ibias.sym} -1130 370 0 0 {name=x4}
-C {p_ibias.sym} -1130 270 0 0 {name=x5}
 C {devices/lab_pin.sym} -730 -180 0 0 {name=p2 sig_type=std_logic lab=pbias}
 C {devices/lab_pin.sym} -730 -140 0 0 {name=p4 sig_type=std_logic lab=pcbias}
 C {devices/lab_pin.sym} -730 -100 0 0 {name=p6 sig_type=std_logic lab=ncbias}
 C {devices/lab_pin.sym} -730 -80 0 0 {name=p7 sig_type=std_logic lab=nbias}
 C {devices/lab_pin.sym} -930 250 0 1 {name=p12 sig_type=std_logic lab=pbias}
 C {devices/lab_pin.sym} -930 270 0 1 {name=p13 sig_type=std_logic lab=pcbias}
-C {devices/lab_pin.sym} -930 390 0 1 {name=p14 sig_type=std_logic lab=nbias}
+C {devices/lab_pin.sym} -930 370 0 1 {name=p14 sig_type=std_logic lab=nbias}
 C {devices/lab_pin.sym} -930 350 0 1 {name=p15 sig_type=std_logic lab=ncbias}
 C {devices/lab_pin.sym} -1360 250 0 0 {name=p16 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} -1360 270 0 0 {name=p17 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} -950 480 0 0 {name=p18 lab=iref}
+C {devices/iopin.sym} -950 460 0 0 {name=p18 lab=iref}
 C {lvhvbuff.sym} -1130 -170 0 0 {name=x6}
 C {lvhvbuff.sym} -1130 -80 0 0 {name=x7}
 C {lvhvbuff.sym} -1130 10 0 0 {name=x8}
@@ -446,3 +441,6 @@ C {devices/lab_pin.sym} -730 1210 0 0 {name=p40 sig_type=std_logic lab=d6}
 C {devices/lab_pin.sym} -730 1440 0 0 {name=p41 sig_type=std_logic lab=d7}
 C {icell64scs.sym} -320 1240 0 0 {name=x17}
 C {icell128scs.sym} -320 1470 0 0 {name=x18}
+C {mosgsconnected.sym} -1130 460 0 0 {name=x4}
+C {p_ibias_mirror.sym} -1130 270 0 0 {name=x5}
+C {n_ibias_mirror.sym} -1130 370 0 0 {name=x19}

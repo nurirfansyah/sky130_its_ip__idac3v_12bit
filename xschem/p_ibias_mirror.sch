@@ -45,34 +45,14 @@ N -110 -170 120 -170 {
 lab=avdd}
 N -360 -170 -110 -170 {
 lab=avdd}
-N -360 -80 -330 -80 {
-lab=avdd}
-N -360 -50 -360 90 {
-lab=iref}
-N -420 -80 -400 -80 {
-lab=iref}
-N -420 -80 -420 -20 {
-lab=iref}
-N -420 -20 -420 10 {
-lab=iref}
-N -420 10 -360 10 {
-lab=iref}
-N -420 90 -360 90 {
-lab=iref}
-N -420 90 -420 130 {
-lab=iref}
-N -330 -170 -330 -80 {
-lab=avdd}
-N -360 -170 -360 -110 {
-lab=avdd}
 N -430 -170 -360 -170 {
 lab=avdd}
 N -290 -80 -270 -80 {
-lab=iref}
+lab=xxx}
 N -290 -80 -290 -20 {
-lab=iref}
+lab=xxx}
 N -420 -20 -290 -20 {
-lab=iref}
+lab=xxx}
 N -230 -170 -230 -110 {
 lab=avdd}
 N -230 140 -230 160 {
@@ -192,21 +172,6 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/ipin.sym} -430 -170 0 0 {name=p1 lab=avdd}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} -380 -80 0 0 {name=M6
-W=12
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {devices/iopin.sym} -420 130 0 0 {name=p3 lab=iref}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 60 190 0 0 {name=M1
 W=7
 L=1
@@ -280,3 +245,4 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
+C {devices/ipin.sym} -420 -20 0 0 {name=p3 lab=vgref}

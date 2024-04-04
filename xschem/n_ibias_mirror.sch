@@ -58,18 +58,16 @@ lab=avdd}
 N -130 -320 60 -320 {
 lab=avdd}
 N -40 -250 20 -250 {
-lab=iref}
+lab=xxx}
 N -40 -250 -40 -190 {
-lab=iref}
+lab=xxx}
 N -210 -190 -40 -190 {
-lab=iref}
+lab=xxx}
 N -210 -250 -210 -190 {
-lab=iref}
+lab=xxx}
 N -210 -250 -170 -250 {
-lab=iref}
+lab=xxx}
 N -330 -320 -130 -320 {
-lab=avdd}
-N -280 -320 -280 -280 {
 lab=avdd}
 N 60 -250 110 -250 {
 lab=avdd}
@@ -79,32 +77,14 @@ N 60 -320 110 -320 {
 lab=avdd}
 N 110 -320 110 -310 {
 lab=avdd}
-N -280 -250 -250 -250 {
-lab=avdd}
-N -250 -320 -250 -250 {
-lab=avdd}
 N -130 -250 -100 -250 {
 lab=avdd}
 N -100 -320 -100 -250 {
 lab=avdd}
 N -320 120 -250 120 {
 lab=avss}
-N -280 -220 -280 -80 {
-lab=iref}
-N -340 -250 -320 -250 {
-lab=iref}
-N -340 -250 -340 -190 {
-lab=iref}
 N -340 -190 -210 -190 {
-lab=iref}
-N -340 -190 -340 -160 {
-lab=iref}
-N -340 -160 -280 -160 {
-lab=iref}
-N -340 -80 -280 -80 {
-lab=iref}
-N -340 -80 -340 -40 {
-lab=iref}
+lab=xxx}
 N -130 -70 -80 -70 {
 lab=avss}
 N -80 -70 -80 120 {
@@ -179,22 +159,8 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} -300 -250 0 0 {name=M6
-W=12
-L=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
 C {devices/ipin.sym} -320 120 0 0 {name=p1 lab=avss}
 C {devices/ipin.sym} -330 -320 0 0 {name=p2 lab=avdd}
-C {devices/iopin.sym} -340 -40 0 0 {name=p3 lab=iref}
 C {devices/opin.sym} 310 10 0 0 {name=p4 lab=nbias}
 C {devices/opin.sym} 310 -130 0 0 {name=p5 lab=ncbias}
+C {devices/ipin.sym} -340 -190 0 0 {name=p3 lab=vgref}
