@@ -193,13 +193,13 @@ op
 "}
 C {devices/lab_wire.sym} 540 -150 0 0 {name=p7 sig_type=std_logic lab=out}
 C {devices/res.sym} 630 -20 0 0 {name=R1
-value=100
+value=50
 footprint=1206
 device=resistor
 m=1}
 C {devices/vsource.sym} 570 -90 0 0 {name=V8 value=0}
 C {devices/res.sym} 570 -20 0 0 {name=R2
-value=100
+value=50
 footprint=1206
 device=resistor
 m=1}

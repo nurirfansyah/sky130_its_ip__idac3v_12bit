@@ -75,8 +75,14 @@ N 160 -70 160 230 {
 lab=ioutn}
 N 150 -50 150 250 {
 lab=iref}
+N -200 390 -170 390 {
+lab=clk}
+N -200 390 -200 420 {
+lab=clk}
+N -240 420 -200 420 {
+lab=clk}
 C {idac8bit_binary_cs.sym} -20 20 0 0 {name=x1}
-C {idac4bit_unary_cs.sym} -20 290 0 0 {name=x2}
+C {idac4bit_unary_cs.sym} -20 300 0 0 {name=x2}
 C {devices/ipin.sym} -260 -90 0 0 {name=p1 lab=avdd}
 C {devices/ipin.sym} -260 -70 0 0 {name=p2 lab=dvdd}
 C {devices/ipin.sym} -260 -50 0 0 {name=p3 lab=avss}
@@ -96,3 +102,4 @@ C {devices/ipin.sym} -240 370 0 0 {name=p16 lab=din11}
 C {devices/opin.sym} 190 -90 0 0 {name=p17 lab=iout}
 C {devices/opin.sym} 190 -70 0 0 {name=p18 lab=ioutn}
 C {devices/iopin.sym} 190 -50 0 0 {name=p19 lab=iref}
+C {devices/ipin.sym} -240 420 0 0 {name=p20 lab=clk}

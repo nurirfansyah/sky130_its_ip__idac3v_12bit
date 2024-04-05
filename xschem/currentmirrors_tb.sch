@@ -88,9 +88,9 @@ lab=#net5}
 N 1580 -850 1580 -830 {
 lab=#net5}
 N 1240 -830 1260 -830 {
-lab=GND}
+lab=#net9}
 N 1240 -660 1260 -660 {
-lab=GND}
+lab=#net9}
 N 1220 -700 1260 -700 {
 lab=#net2}
 N 1220 -870 1220 -700 {
@@ -105,11 +105,16 @@ N 1140 -1000 1140 -730 {
 lab=#net9}
 N 1140 -1000 1410 -1000 {
 lab=#net9}
-N 1240 -830 1240 -660 {}
-N 1140 -830 1240 -830 {}
-N 1200 -850 1260 -850 {}
-N 1200 -850 1200 -580 {}
-N 1200 -680 1260 -680 {}
+N 1240 -830 1240 -660 {
+lab=#net9}
+N 1140 -830 1240 -830 {
+lab=#net9}
+N 1200 -850 1260 -850 {
+lab=GND}
+N 1200 -850 1200 -580 {
+lab=GND}
+N 1200 -680 1260 -680 {
+lab=GND}
 C {devices/gnd.sym} 1460 -550 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1060 -700 0 0 {name=V2 value=3.3 savecurrent=false}
 C {devices/code.sym} 1710 -1090 0 0 {name=TT_MODELS
@@ -136,10 +141,10 @@ C {devices/vsource.sym} 2230 -660 0 0 {name=V3 value=1.65 savecurrent=false}
 C {devices/vsource.sym} 2150 -950 0 0 {name=V4 value=0 savecurrent=false}
 C {devices/isource.sym} 1140 -700 0 0 {name=I1 value=10u}
 C {devices/vsource.sym} 2150 -760 0 0 {name=V1 value=0 savecurrent=false}
-C {pcell1scs.sym} 1860 -680 0 0 {name=x3}
-C {ncell1scs.sym} 1860 -810 0 0 {name=x2}
 C {devices/noconn.sym} 2010 -830 0 1 {name=l2}
 C {devices/noconn.sym} 2010 -700 0 1 {name=l3}
 C {mosgsconnected.sym} 1240 -1070 0 0 {name=x1}
 C {p_ibias_mirror.sym} 1410 -680 0 0 {name=x4}
 C {n_ibias_mirror.sym} 1410 -850 0 0 {name=x5}
+C {pcell256scs.sym} 1860 -680 0 0 {name=x2}
+C {ncell256scs.sym} 1860 -810 0 0 {name=x3}

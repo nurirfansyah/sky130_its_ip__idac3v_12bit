@@ -353,25 +353,55 @@ N -590 280 -560 280 {
 lab=dhv2n}
 N -590 400 -560 400 {
 lab=dhv3n}
-N -1170 830 -1130 830 {
+N -590 790 -530 790 {
+lab=t0}
+N -590 810 -530 810 {
+lab=t1}
+N -590 830 -530 830 {
+lab=t2}
+N -590 850 -530 850 {
+lab=t3}
+N -590 870 -530 870 {
+lab=t4}
+N -590 890 -530 890 {
+lab=t5}
+N -590 910 -530 910 {
+lab=t6}
+N -590 930 -530 930 {
+lab=t7}
+N -590 950 -530 950 {
+lab=t8}
+N -590 970 -530 970 {
+lab=t9}
+N -590 990 -530 990 {
+lab=t10}
+N -590 1010 -530 1010 {
+lab=t11}
+N -590 1030 -530 1030 {
+lab=t12}
+N -590 1050 -530 1050 {
+lab=t13}
+N -590 1070 -530 1070 {
+lab=t14}
+N -930 790 -890 790 {
 lab=avdd}
-N -1170 850 -1130 850 {
+N -930 810 -890 810 {
 lab=dvss}
-N -1170 870 -1130 870 {
+N -930 830 -890 830 {
 lab=dhv0}
-N -1170 890 -1130 890 {
+N -930 850 -890 850 {
 lab=dhv1}
-N -1170 910 -1130 910 {
+N -930 870 -890 870 {
 lab=dhv2}
-N -1170 930 -1130 930 {
+N -930 890 -890 890 {
 lab=dhv3}
-N -1170 950 -1130 950 {
+N -930 910 -890 910 {
 lab=dhv0n}
-N -1170 970 -1130 970 {
+N -930 930 -890 930 {
 lab=dhv1n}
-N -1170 990 -1130 990 {
+N -930 950 -890 950 {
 lab=dhv2n}
-N -1170 1010 -1130 1010 {
+N -930 970 -890 970 {
 lab=dhv3n}
 N -900 520 -830 520 {
 lab=dvdd}
@@ -419,92 +449,14 @@ N -550 520 -500 520 {
 lab=iout}
 N -550 550 -500 550 {
 lab=ioutn}
-N -950 1340 -950 1470 {
-lab=avdd}
-N -950 1470 -930 1470 {
-lab=avdd}
-N -990 1280 -930 1280 {
-lab=iref}
-N -990 1280 -990 1430 {
-lab=iref}
-N -990 1380 -930 1380 {
-lab=iref}
-N -990 1430 -620 1430 {
-lab=iref}
-N -630 1470 -600 1470 {
-lab=iref}
-N -620 1430 -620 1470 {
-lab=iref}
-N -360 770 -300 770 {
-lab=t0}
-N -360 790 -300 790 {
-lab=t1}
-N -360 810 -300 810 {
-lab=t2}
-N -360 830 -300 830 {
-lab=t3}
-N -360 850 -300 850 {
-lab=t4}
-N -360 870 -300 870 {
-lab=t5}
-N -360 890 -300 890 {
-lab=t6}
-N -360 910 -300 910 {
-lab=t7}
-N -360 930 -300 930 {
-lab=t8}
-N -360 950 -300 950 {
-lab=t9}
-N -360 970 -300 970 {
-lab=t10}
-N -360 990 -300 990 {
-lab=t11}
-N -360 1010 -300 1010 {
-lab=t12}
-N -360 1030 -300 1030 {
-lab=t13}
-N -360 1050 -300 1050 {
-lab=t14}
-N -830 830 -660 830 {
-lab=#net1}
-N -830 850 -660 850 {
-lab=#net2}
-N -830 870 -660 870 {
-lab=#net3}
-N -830 890 -660 890 {
-lab=#net4}
-N -830 910 -660 910 {
-lab=#net5}
-N -830 930 -660 930 {
-lab=#net6}
-N -830 950 -660 950 {
-lab=#net7}
-N -830 970 -660 970 {
-lab=#net8}
-N -830 990 -660 990 {
-lab=#net9}
-N -830 1010 -660 1010 {
-lab=#net10}
-N -830 1030 -660 1030 {
-lab=#net11}
-N -830 1050 -660 1050 {
-lab=#net12}
-N -830 1070 -660 1070 {
-lab=#net13}
-N -830 1090 -660 1090 {
-lab=#net14}
-N -830 1110 -660 1110 {
-lab=#net15}
-N -1170 810 -660 810 {
-lab=clk}
-N -1140 790 -660 790 {
-lab=dvss}
-N -1140 790 -1140 850 {
-lab=dvss}
-N -1150 770 -660 770 {
-lab=avdd}
-N -1150 770 -1150 830 {
-lab=avdd}
+N -950 1340 -950 1470 {}
+N -950 1470 -930 1470 {}
+N -990 1280 -930 1280 {}
+N -990 1280 -990 1430 {}
+N -990 1380 -930 1380 {}
+N -990 1430 -620 1430 {}
+N -630 1470 -600 1470 {}
+N -620 1430 -620 1470 {}
 C {devices/lab_pin.sym} -50 10 0 0 {name=p1 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} -50 30 0 0 {name=p2 sig_type=std_logic lab=pbias}
 C {devices/lab_pin.sym} -50 50 0 0 {name=p3 sig_type=std_logic lab=t0}
@@ -683,17 +635,32 @@ C {devices/lab_pin.sym} -560 50 0 1 {name=p671 sig_type=std_logic lab=dhv0n}
 C {devices/lab_pin.sym} -560 170 0 1 {name=p672 sig_type=std_logic lab=dhv1n}
 C {devices/lab_pin.sym} -560 280 0 1 {name=p673 sig_type=std_logic lab=dhv2n}
 C {devices/lab_pin.sym} -560 400 0 1 {name=p674 sig_type=std_logic lab=dhv3n}
-C {bin2thermo4bit_0_15.sym} -980 970 0 0 {name=x17}
-C {devices/lab_pin.sym} -1170 830 0 0 {name=p177 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} -1170 850 0 0 {name=p178 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} -1170 870 0 0 {name=p179 sig_type=std_logic lab=dhv0}
-C {devices/lab_pin.sym} -1170 890 0 0 {name=p180 sig_type=std_logic lab=dhv1}
-C {devices/lab_pin.sym} -1170 910 0 0 {name=p181 sig_type=std_logic lab=dhv2}
-C {devices/lab_pin.sym} -1170 930 0 0 {name=p182 sig_type=std_logic lab=dhv3}
-C {devices/lab_pin.sym} -1170 950 0 0 {name=p183 sig_type=std_logic lab=dhv0n}
-C {devices/lab_pin.sym} -1170 970 0 0 {name=p184 sig_type=std_logic lab=dhv1n}
-C {devices/lab_pin.sym} -1170 990 0 0 {name=p185 sig_type=std_logic lab=dhv2n}
-C {devices/lab_pin.sym} -1170 1010 0 0 {name=p186 sig_type=std_logic lab=dhv3n}
+C {bin2thermo4bit_0_15.sym} -740 930 0 0 {name=x17}
+C {devices/lab_pin.sym} -530 790 0 1 {name=p161 sig_type=std_logic lab=t0}
+C {devices/lab_pin.sym} -530 810 0 1 {name=p162 sig_type=std_logic lab=t1}
+C {devices/lab_pin.sym} -530 830 0 1 {name=p163 sig_type=std_logic lab=t2}
+C {devices/lab_pin.sym} -530 850 0 1 {name=p164 sig_type=std_logic lab=t3}
+C {devices/lab_pin.sym} -530 870 0 1 {name=p165 sig_type=std_logic lab=t4}
+C {devices/lab_pin.sym} -530 890 0 1 {name=p166 sig_type=std_logic lab=t5}
+C {devices/lab_pin.sym} -530 910 0 1 {name=p167 sig_type=std_logic lab=t6}
+C {devices/lab_pin.sym} -530 930 0 1 {name=p168 sig_type=std_logic lab=t7}
+C {devices/lab_pin.sym} -530 950 0 1 {name=p169 sig_type=std_logic lab=t8}
+C {devices/lab_pin.sym} -530 970 0 1 {name=p170 sig_type=std_logic lab=t9}
+C {devices/lab_pin.sym} -530 990 0 1 {name=p171 sig_type=std_logic lab=t10}
+C {devices/lab_pin.sym} -530 1010 0 1 {name=p172 sig_type=std_logic lab=t11}
+C {devices/lab_pin.sym} -530 1030 0 1 {name=p173 sig_type=std_logic lab=t12}
+C {devices/lab_pin.sym} -530 1050 0 1 {name=p174 sig_type=std_logic lab=t13}
+C {devices/lab_pin.sym} -530 1070 0 1 {name=p175 sig_type=std_logic lab=t14}
+C {devices/lab_pin.sym} -930 790 0 0 {name=p177 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} -930 810 0 0 {name=p178 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} -930 830 0 0 {name=p179 sig_type=std_logic lab=dhv0}
+C {devices/lab_pin.sym} -930 850 0 0 {name=p180 sig_type=std_logic lab=dhv1}
+C {devices/lab_pin.sym} -930 870 0 0 {name=p181 sig_type=std_logic lab=dhv2}
+C {devices/lab_pin.sym} -930 890 0 0 {name=p182 sig_type=std_logic lab=dhv3}
+C {devices/lab_pin.sym} -930 910 0 0 {name=p183 sig_type=std_logic lab=dhv0n}
+C {devices/lab_pin.sym} -930 930 0 0 {name=p184 sig_type=std_logic lab=dhv1n}
+C {devices/lab_pin.sym} -930 950 0 0 {name=p185 sig_type=std_logic lab=dhv2n}
+C {devices/lab_pin.sym} -930 970 0 0 {name=p186 sig_type=std_logic lab=dhv3n}
 C {devices/ipin.sym} -900 520 0 0 {name=p187 lab=dvdd}
 C {devices/ipin.sym} -900 540 0 0 {name=p188 lab=avdd}
 C {devices/ipin.sym} -900 560 0 0 {name=p189 lab=dvss}
@@ -726,35 +693,18 @@ C {devices/lab_pin.sym} -550 550 0 0 {name=p206 sig_type=std_logic lab=ioutn}
 C {p_ibias_mirror.sym} -780 1260 0 0 {name=x1}
 C {n_ibias_mirror.sym} -780 1360 0 0 {name=x2}
 C {mosgsconnected.sym} -780 1470 0 0 {name=x18}
-C {devices/lab_pin.sym} -300 770 0 1 {name=p151 sig_type=std_logic lab=t0}
-C {devices/lab_pin.sym} -300 790 0 1 {name=p152 sig_type=std_logic lab=t1}
-C {devices/lab_pin.sym} -300 810 0 1 {name=p153 sig_type=std_logic lab=t2}
-C {devices/lab_pin.sym} -300 830 0 1 {name=p154 sig_type=std_logic lab=t3}
-C {devices/lab_pin.sym} -300 850 0 1 {name=p155 sig_type=std_logic lab=t4}
-C {devices/lab_pin.sym} -300 870 0 1 {name=p156 sig_type=std_logic lab=t5}
-C {devices/lab_pin.sym} -300 890 0 1 {name=p157 sig_type=std_logic lab=t6}
-C {devices/lab_pin.sym} -300 910 0 1 {name=p158 sig_type=std_logic lab=t7}
-C {devices/lab_pin.sym} -300 930 0 1 {name=p159 sig_type=std_logic lab=t8}
-C {devices/lab_pin.sym} -300 950 0 1 {name=p160 sig_type=std_logic lab=t9}
-C {devices/lab_pin.sym} -300 970 0 1 {name=p176 sig_type=std_logic lab=t10}
-C {devices/lab_pin.sym} -300 990 0 1 {name=p216 sig_type=std_logic lab=t11}
-C {devices/lab_pin.sym} -300 1010 0 1 {name=p217 sig_type=std_logic lab=t12}
-C {devices/lab_pin.sym} -300 1030 0 1 {name=p218 sig_type=std_logic lab=t13}
-C {devices/lab_pin.sym} -300 1050 0 1 {name=p219 sig_type=std_logic lab=t14}
-C {icell256_unary_scs.sym} 130 80 0 0 {name=x3}
-C {icell256_unary_scs.sym} 130 270 0 0 {name=x4}
-C {icell256_unary_scs.sym} 130 460 0 0 {name=x5}
-C {icell256_unary_scs.sym} 130 660 0 0 {name=x6}
-C {icell256_unary_scs.sym} 130 860 0 0 {name=x7}
-C {icell256_unary_scs.sym} 130 1050 0 0 {name=x8}
-C {icell256_unary_scs.sym} 130 1240 0 0 {name=x9}
-C {icell256_unary_scs.sym} 130 1440 0 0 {name=x10}
-C {icell256_unary_scs.sym} 770 1260 0 0 {name=x11}
-C {icell256_unary_scs.sym} 770 1050 0 0 {name=x12}
-C {icell256_unary_scs.sym} 770 860 0 0 {name=x14}
-C {icell256_unary_scs.sym} 770 650 0 0 {name=x15}
-C {icell256_unary_scs.sym} 770 460 0 0 {name=x16}
-C {icell256_unary_scs.sym} 770 270 0 0 {name=x19}
-C {icell256_unary_scs.sym} 770 80 0 0 {name=x20}
-C {dff15ch.sym} -510 940 0 0 {name=x21}
-C {devices/ipin.sym} -1170 810 0 0 {name=p161 lab=clk}
+C {icell256scs.sym} 130 80 0 0 {name=x3}
+C {icell256scs.sym} 130 270 0 0 {name=x4}
+C {icell256scs.sym} 130 460 0 0 {name=x5}
+C {icell256scs.sym} 130 660 0 0 {name=x6}
+C {icell256scs.sym} 130 860 0 0 {name=x7}
+C {icell256scs.sym} 130 1050 0 0 {name=x8}
+C {icell256scs.sym} 130 1240 0 0 {name=x9}
+C {icell256scs.sym} 130 1440 0 0 {name=x10}
+C {icell256scs.sym} 770 80 0 0 {name=x11}
+C {icell256scs.sym} 770 270 0 0 {name=x12}
+C {icell256scs.sym} 770 460 0 0 {name=x14}
+C {icell256scs.sym} 770 650 0 0 {name=x15}
+C {icell256scs.sym} 770 860 0 0 {name=x16}
+C {icell256scs.sym} 770 1050 0 0 {name=x19}
+C {icell256scs.sym} 770 1260 0 0 {name=x20}
