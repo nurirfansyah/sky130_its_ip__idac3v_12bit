@@ -1,0 +1,91 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717417325
+<< error_p >>
+rect 7024 -2464 7126 -2443
+rect 7052 -2492 7098 -2471
+rect 7449 -3293 7496 -2249
+rect 7503 -3347 7550 -2195
+rect 8040 -3358 8087 -1725
+rect 8094 -3412 8141 -1779
+rect 8631 -3423 8678 -1790
+rect 8685 -3477 8732 -1844
+rect 2366 -5672 2412 -5646
+rect 2338 -5700 2440 -5674
+rect 2793 -5903 2810 -4241
+rect 2847 -5952 2864 -4187
+rect 3414 -5998 3431 -4777
+rect 3468 -6047 3485 -4831
+rect 4035 -6093 4052 -4877
+rect 4089 -6142 4106 -4926
+<< error_s >>
+rect 2404 -1750 2586 -1230
+rect 2990 -1748 3078 -1228
+rect 3508 -1734 3664 -1214
+rect 4322 -1686 4374 -1166
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+use pcell1scs  x1
+timestamp 1717417325
+transform 1 0 2255 0 1 -3474
+box -95 -2780 2484 404
+use ncell1scs  x2
+timestamp 1717417325
+transform 1 0 6941 0 1 -864
+box -65 -2660 2364 200
+use sky130_fd_sc_hvl__nand2_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 982 0 1 -2129
+box -66 -43 546 897
+use sky130_fd_sc_hvl__inv_1  x4 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 2470 0 1 -2127
+box -66 -43 354 897
+use sky130_fd_sc_hvl__and2_1  x5 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 1594 0 1 -2127
+box -66 -43 738 897
+use sky130_fd_sc_hvl__inv_1  x6
+timestamp 1710522493
+transform 1 0 3056 0 1 -2125
+box -66 -43 354 897
+use sky130_fd_sc_hvl__nand2_1  x7
+timestamp 1710522493
+transform 1 0 3574 0 1 -2111
+box -66 -43 546 897
+use sky130_fd_sc_hvl__and2_1  x8
+timestamp 1710522493
+transform 1 0 4388 0 1 -2063
+box -66 -43 738 897
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 iout
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 avdd
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 pbias
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 ioutn
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 sw
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 pcbias
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 idir_sel
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 ncbias
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 nbias
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 avss
+port 9 nsew
+<< end >>

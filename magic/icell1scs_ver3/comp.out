@@ -1,0 +1,46 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_243UAW in circuit pcell1scs (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGF6VM in circuit pcell1scs (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGR8VM in circuit pcell1scs (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: pcell1scs                       |Circuit 2: pcell1scs                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (4)           |sky130_fd_pr__pfet_g5v0d10v5 (4)           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pcell1scs                       |Circuit 2: pcell1scs                       
+-------------------------------------------|-------------------------------------------
+pbias                                      |pbias                                      
+pcbias                                     |pcbias                                     
+iout                                       |iout                                       
+iout_n                                     |iout_n                                     
+sw_b                                       |sw_b                                       
+sw_bn                                      |sw_bn                                      
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pcell1scs and pcell1scs are equivalent.
+
+Final result: Circuits match uniquely.
+.

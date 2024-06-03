@@ -1,0 +1,24 @@
+* NGSPICE file created from pcell1scs.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_243UAW a_100_n1200# w_n358_n1497# a_n158_n1200#
++ a_n100_n1297#
+X0 a_100_n1200# a_n100_n1297# a_n158_n1200# w_n358_n1497# sky130_fd_pr__pfet_g5v0d10v5 ad=3.48 pd=24.58 as=3.48 ps=24.58 w=12 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGF6VM w_n358_n897# a_n158_n600# a_n100_n697#
++ a_100_n600#
+X0 a_100_n600# a_n100_n697# a_n158_n600# w_n358_n897# sky130_fd_pr__pfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGR8VM a_n100_n497# a_100_n400# w_n358_n697#
++ a_n158_n400#
+X0 a_100_n400# a_n100_n497# a_n158_n400# w_n358_n697# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt pcell1scs avdd pbias pcbias sw_b sw_bn iout_n iout
+Xsky130_fd_pr__pfet_g5v0d10v5_243UAW_0 m1_1868_n522# avdd m1_1148_n522# pcbias sky130_fd_pr__pfet_g5v0d10v5_243UAW
+Xsky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0 avdd avdd pbias m1_1148_n522# sky130_fd_pr__pfet_g5v0d10v5_FGF6VM
+Xsky130_fd_pr__pfet_g5v0d10v5_FGR8VM_0 sw_bn iout_n avdd m1_1868_n522# sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+Xsky130_fd_pr__pfet_g5v0d10v5_FGR8VM_1 sw_b m1_1868_n522# avdd iout sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+.ends
+
