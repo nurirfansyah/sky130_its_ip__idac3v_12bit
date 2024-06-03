@@ -1,0 +1,368 @@
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/idac12bitsegmented.sch
+.subckt idac12bitsegmented iout avdd dvdd ioutn avss iref idir_sel din0 din1 din2 din3 din4 din5 din6 din7 din8 din9 din10 din11
++ clk
+*.PININFO avdd:I dvdd:I avss:I idir_sel:I din0:I din1:I din2:I din3:I din4:I din5:I din7:I din8:I din9:I din10:I din6:I din11:I
+*+ iout:O ioutn:O iref:B clk:I
+x1 avdd dvdd iout ioutn din0 idir_sel din1 avss din2 din3 iref din4 din5 din6 din7 idac8bit_binary_cs
+x2 dvdd iout avdd ioutn avss avss idir_sel din8 din9 din10 din11 clk iref idac4bit_unary_cs
+.ends
+
+* expanding   symbol:  idac8bit_binary_cs.sym # of pins=15
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/idac8bit_binary_cs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/idac8bit_binary_cs.sch
+.subckt idac8bit_binary_cs avdd dvdd iout ioutn din0 idir_sel din1 avss din2 din3 iref din4 din5 din6 din7
+*.PININFO avdd:I din0:I idir_sel:I avss:I din1:I din2:I iout:O iref:B dvdd:I ioutn:O din3:I din4:I din5:I din6:I din7:I
+x6 dvdd avdd din0 d0 avss lvhvbuff
+x7 dvdd avdd din1 d1 avss lvhvbuff
+x8 dvdd avdd din2 d2 avss lvhvbuff
+x1 iout avdd pbias ioutn d0 pcbias idir_sel ncbias nbias avss icell1scs
+x2 iout avdd pbias ioutn d1 pcbias idir_sel ncbias nbias avss icell2scs
+x3 iout avdd pbias ioutn d2 pcbias idir_sel ncbias nbias avss icell4scs
+x9 iout avdd pbias ioutn d3 pcbias idir_sel ncbias nbias avss icell8scs
+x10 iout avdd pbias ioutn d4 pcbias idir_sel ncbias nbias avss icell16scs
+x11 iout avdd pbias ioutn d5 pcbias idir_sel ncbias nbias avss icell32scs
+x12 dvdd avdd din3 d3 avss lvhvbuff
+x13 dvdd avdd din4 d4 avss lvhvbuff
+x14 dvdd avdd din5 d5 avss lvhvbuff
+x15 dvdd avdd din6 d6 avss lvhvbuff
+x16 dvdd avdd din7 d7 avss lvhvbuff
+x17 iout avdd pbias ioutn d6 pcbias idir_sel ncbias nbias avss icell64scs
+x18 iout avdd pbias ioutn d7 pcbias idir_sel ncbias nbias avss icell128scs
+x4 avdd iref mosgsconnected
+x5 avdd pbias iref pcbias avss p_ibias_mirror
+x19 avdd iref ncbias nbias avss n_ibias_mirror
+.ends
+
+
+* expanding   symbol:  idac4bit_unary_cs.sym # of pins=13
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/idac4bit_unary_cs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/idac4bit_unary_cs.sch
+.subckt idac4bit_unary_cs dvdd iout avdd ioutn dvss avss idir_sel dlv0 dlv1 dlv2 dlv3 clk iref
+*.PININFO dvdd:I avdd:I dvss:I avss:I dlv0:I dlv1:I dlv2:I dlv3:I idir_sel:I iref:B iout:O ioutn:O clk:I
+x13 dvdd avdd dlv0 dhv0 dvss dhv0n lvhvbuffc
+x66 dvdd avdd dlv1 dhv1 dvss dhv1n lvhvbuffc
+x67 dvdd avdd dlv2 dhv2 dvss dhv2n lvhvbuffc
+x68 dvdd avdd dlv3 dhv3 dvss dhv3n lvhvbuffc
+x17 avdd dvss dhv0 net1 dhv1 net2 dhv2 net3 net4 dhv3 net5 net6 net7 net8 dhv0n dhv1n net9 net10 dhv2n dhv3n net11 net12 net13
++ net14 net15 bin2thermo4bit_0_15
+x1 avdd pbias iref pcbias avss p_ibias_mirror
+x2 avdd iref ncbias nbias avss n_ibias_mirror
+x18 avdd iref mosgsconnected
+x3 iout avdd pbias ioutn t0 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x4 iout avdd pbias ioutn t1 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x5 iout avdd pbias ioutn t2 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x6 iout avdd pbias ioutn t3 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x7 iout avdd pbias ioutn t4 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x8 iout avdd pbias ioutn t5 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x9 iout avdd pbias ioutn t6 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x10 iout avdd pbias ioutn t7 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x11 iout avdd pbias ioutn t14 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x12 iout avdd pbias ioutn t13 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x14 iout avdd pbias ioutn t12 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x15 iout avdd pbias ioutn t11 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x16 iout avdd pbias ioutn t10 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x19 iout avdd pbias ioutn t9 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x20 iout avdd pbias ioutn t8 pcbias idir_sel ncbias nbias avss icell256_unary_scs
+x21 avdd dvss clk t0 net1 t1 net2 t2 net3 t3 net4 t4 net5 t5 net6 t6 net7 t7 net8 t8 net9 t9 net10 t10 net11 t11 net12 t12 net13
++ t13 net14 t14 net15 dff15ch
+.ends
+
+
+* expanding   symbol:  lvhvbuff.sym # of pins=5
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/lvhvbuff.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/lvhvbuff.sch
+.subckt lvhvbuff dvdd avdd blv_in bhv_out dvss
+*.PININFO dvdd:I avdd:I blv_in:I dvss:I bhv_out:O
+x1 blv_in dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
+x2 net1 dvss dvss avdd avdd net2 sky130_fd_sc_hvl__inv_4
+x3 net2 dvss dvss avdd avdd bhv_out sky130_fd_sc_hvl__inv_8
+.ends
+
+
+* expanding   symbol:  icell1scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell1scs.sch
+.subckt icell1scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I pcbias:I sw:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x3 sw net1 avss avss avdd avdd net2 sky130_fd_sc_hvl__nand2_1
+x5 idir_sel sw avss avss avdd avdd net3 sky130_fd_sc_hvl__and2_1
+x4 idir_sel avss avss avdd avdd net1 sky130_fd_sc_hvl__inv_1
+x6 sw avss avss avdd avdd net4 sky130_fd_sc_hvl__inv_1
+x7 net1 net4 avss avss avdd avdd net5 sky130_fd_sc_hvl__nand2_1
+x1 avdd pbias pcbias net2 net5 ioutn iout pcell1scs
+x2 iout ioutn net6 net3 ncbias nbias avss ncell1scs
+x8 net4 idir_sel avss avss avdd avdd net6 sky130_fd_sc_hvl__and2_1
+.ends
+
+
+* expanding   symbol:  icell2scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell2scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell2scs.sch
+.subckt icell2scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell1scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell1scs
+.ends
+
+
+* expanding   symbol:  icell4scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell4scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell4scs.sch
+.subckt icell4scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell2scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell2scs
+.ends
+
+
+* expanding   symbol:  icell8scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell8scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell8scs.sch
+.subckt icell8scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell4scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell4scs
+.ends
+
+
+* expanding   symbol:  icell16scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell16scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell16scs.sch
+.subckt icell16scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell8scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell8scs
+.ends
+
+
+* expanding   symbol:  icell32scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell32scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell32scs.sch
+.subckt icell32scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell16scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell16scs
+.ends
+
+
+* expanding   symbol:  icell64scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell64scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell64scs.sch
+.subckt icell64scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell32scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell32scs
+.ends
+
+
+* expanding   symbol:  icell128scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell128scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell128scs.sch
+.subckt icell128scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I sw:I pcbias:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell64scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell64scs
+.ends
+
+
+* expanding   symbol:  mosgsconnected.sym # of pins=2
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/mosgsconnected.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/mosgsconnected.sch
+.subckt mosgsconnected avdd iref
+*.PININFO avdd:I iref:B
+XM6 iref iref avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  p_ibias_mirror.sym # of pins=5
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/p_ibias_mirror.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/p_ibias_mirror.sch
+.subckt p_ibias_mirror avdd pbias vgref pcbias avss
+*.PININFO avdd:I avss:I pbias:O pcbias:O vgref:I
+XM3 pcbias pcbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=12 W=8 nf=1 m=1
+XM4 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM5 pbias pcbias net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 m=1
+XM1 pbias net2 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=7 nf=1 m=1
+XM2 net3 vgref avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 m=1
+XM7 net2 net2 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=10 nf=1 m=1
+XM8 pcbias net2 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=7 nf=1 m=1
+XM9 net2 net2 net3 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=8 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  n_ibias_mirror.sym # of pins=5
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/n_ibias_mirror.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/n_ibias_mirror.sch
+.subckt n_ibias_mirror avdd vgref ncbias nbias avss
+*.PININFO avss:I avdd:I nbias:O ncbias:O vgref:I
+XM1 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM2 nbias ncbias net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM3 ncbias ncbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=10 W=10 nf=1 m=1
+XM4 nbias vgref avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=7.5 nf=1 m=1
+XM5 ncbias vgref avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=7.5 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  lvhvbuffc.sym # of pins=6
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/lvhvbuffc.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/lvhvbuffc.sch
+.subckt lvhvbuffc dvdd avdd blv_in bhv_out dvss bhv_outn
+*.PININFO dvdd:I avdd:I blv_in:I dvss:I bhv_out:O bhv_outn:O
+x1 blv_in dvdd dvss dvss avdd avdd net1 sky130_fd_sc_hvl__lsbuflv2hv_1
+x2 net1 dvss dvss avdd avdd net2 sky130_fd_sc_hvl__inv_4
+x3 net2 dvss dvss avdd avdd bhv_out sky130_fd_sc_hvl__inv_8
+x4 net1 dvss dvss avdd avdd bhv_outn sky130_fd_sc_hvl__inv_8
+.ends
+
+
+* expanding   symbol:  bin2thermo4bit_0_15.sym # of pins=25
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/bin2thermo4bit_0_15.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/bin2thermo4bit_0_15.sch
+.subckt bin2thermo4bit_0_15 avdd avss din0 t0 din1 t1 din2 t2 t3 din3 t4 t5 t6 t7 din0_n din1_n t8 t9 din2_n din3_n t10 t11 t12
++ t13 t14
+*.PININFO din0:I din1:I din2:I din3:I din0_n:I din1_n:I din2_n:I din3_n:I t0:O t1:O t2:O t3:O t4:O t5:O t6:O t7:O t8:O t9:O t10:O
+*+ t11:O t12:O t13:O t14:O avdd:I avss:I
+x5 net1 t1 avss avss avdd avdd t0 sky130_fd_sc_hvl__or2_1
+x1 net14 din2_n din3_n avss avss avdd avdd net1 sky130_fd_sc_hvl__and3_1
+x32 din0 din1_n avss avss avdd avdd net14 sky130_fd_sc_hvl__and2_1
+x2 net15 t2 avss avss avdd avdd t1 sky130_fd_sc_hvl__or2_1
+x3 net16 din2_n din3_n avss avss avdd avdd net15 sky130_fd_sc_hvl__and3_1
+x4 din0_n din1 avss avss avdd avdd net16 sky130_fd_sc_hvl__and2_1
+x6 net2 t3 avss avss avdd avdd t2 sky130_fd_sc_hvl__or2_1
+x7 net17 din2_n din3_n avss avss avdd avdd net2 sky130_fd_sc_hvl__and3_1
+x8 din0 din1 avss avss avdd avdd net17 sky130_fd_sc_hvl__and2_1
+x9 net3 t4 avss avss avdd avdd t3 sky130_fd_sc_hvl__or2_1
+x10 net18 din2 din3_n avss avss avdd avdd net3 sky130_fd_sc_hvl__and3_1
+x11 din0_n din1_n avss avss avdd avdd net18 sky130_fd_sc_hvl__and2_1
+x12 net7 t8 avss avss avdd avdd t7 sky130_fd_sc_hvl__or2_1
+x13 net19 din2_n din3 avss avss avdd avdd net7 sky130_fd_sc_hvl__and3_1
+x14 din0_n din1_n avss avss avdd avdd net19 sky130_fd_sc_hvl__and2_1
+x15 net6 t7 avss avss avdd avdd t6 sky130_fd_sc_hvl__or2_1
+x16 net20 din2 din3_n avss avss avdd avdd net6 sky130_fd_sc_hvl__and3_1
+x17 din0 din1 avss avss avdd avdd net20 sky130_fd_sc_hvl__and2_1
+x18 net5 t6 avss avss avdd avdd t5 sky130_fd_sc_hvl__or2_1
+x19 net21 din2 din3_n avss avss avdd avdd net5 sky130_fd_sc_hvl__and3_1
+x20 din0_n din1 avss avss avdd avdd net21 sky130_fd_sc_hvl__and2_1
+x21 net4 t5 avss avss avdd avdd t4 sky130_fd_sc_hvl__or2_1
+x22 net22 din2 din3_n avss avss avdd avdd net4 sky130_fd_sc_hvl__and3_1
+x23 din0 din1_n avss avss avdd avdd net22 sky130_fd_sc_hvl__and2_1
+x24 net8 t9 avss avss avdd avdd t8 sky130_fd_sc_hvl__or2_1
+x25 net23 din2_n din3 avss avss avdd avdd net8 sky130_fd_sc_hvl__and3_1
+x26 din0 din1_n avss avss avdd avdd net23 sky130_fd_sc_hvl__and2_1
+x27 net9 t10 avss avss avdd avdd t9 sky130_fd_sc_hvl__or2_1
+x28 net24 din2_n din3 avss avss avdd avdd net9 sky130_fd_sc_hvl__and3_1
+x29 din0_n din1 avss avss avdd avdd net24 sky130_fd_sc_hvl__and2_1
+x30 net10 t11 avss avss avdd avdd t10 sky130_fd_sc_hvl__or2_1
+x31 net25 din2_n din3 avss avss avdd avdd net10 sky130_fd_sc_hvl__and3_1
+x33 din0 din1 avss avss avdd avdd net25 sky130_fd_sc_hvl__and2_1
+x34 net11 t12 avss avss avdd avdd t11 sky130_fd_sc_hvl__or2_1
+x35 net26 din2 din3 avss avss avdd avdd net11 sky130_fd_sc_hvl__and3_1
+x36 din0_n din1_n avss avss avdd avdd net26 sky130_fd_sc_hvl__and2_1
+x41 net29 din2 din3 avss avss avdd avdd t14 sky130_fd_sc_hvl__and3_1
+x42 din0 din1 avss avss avdd avdd net29 sky130_fd_sc_hvl__and2_1
+x43 net13 t14 avss avss avdd avdd t13 sky130_fd_sc_hvl__or2_1
+x44 net28 din2 din3 avss avss avdd avdd net13 sky130_fd_sc_hvl__and3_1
+x45 din0_n din1 avss avss avdd avdd net28 sky130_fd_sc_hvl__and2_1
+x46 net12 t13 avss avss avdd avdd t12 sky130_fd_sc_hvl__or2_1
+x47 net27 din2 din3 avss avss avdd avdd net12 sky130_fd_sc_hvl__and3_1
+x48 din0 din1_n avss avss avdd avdd net27 sky130_fd_sc_hvl__and2_1
+.ends
+
+
+* expanding   symbol:  icell256_unary_scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell256_unary_scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell256_unary_scs.sch
+.subckt icell256_unary_scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.PININFO avdd:I pbias:I pcbias:I sw:I idir_sel:I ncbias:I nbias:I avss:I iout:O ioutn:O
+x3 sw net1 avss avss avdd avdd net12 sky130_fd_sc_hvl__nand2_1
+x5 idir_sel sw avss avss avdd avdd net3 sky130_fd_sc_hvl__and2_1
+x4 idir_sel avss avss avdd avdd net1 sky130_fd_sc_hvl__inv_1
+x6 sw avss avss avdd avdd net4 sky130_fd_sc_hvl__inv_1
+x7 net1 net4 avss avss avdd avdd net11 sky130_fd_sc_hvl__nand2_1
+x8 net4 idir_sel avss avss avdd avdd net13 sky130_fd_sc_hvl__and2_1
+x1 iout ioutn net6 net2 ncbias nbias avss ncell256scs
+x2 avdd pbias pcbias net14 net5 ioutn iout pcell256scs
+x9 net11 avss avss avdd avdd net7 sky130_fd_sc_hvl__inv_4
+x10 net7 avss avss avdd avdd net5 sky130_fd_sc_hvl__inv_16
+x11 net12 avss avss avdd avdd net8 sky130_fd_sc_hvl__inv_4
+x12 net8 avss avss avdd avdd net14 sky130_fd_sc_hvl__inv_16
+x13 net3 avss avss avdd avdd net9 sky130_fd_sc_hvl__inv_4
+x14 net9 avss avss avdd avdd net2 sky130_fd_sc_hvl__inv_16
+x15 net13 avss avss avdd avdd net10 sky130_fd_sc_hvl__inv_4
+x16 net10 avss avss avdd avdd net6 sky130_fd_sc_hvl__inv_16
+.ends
+
+
+* expanding   symbol:  dff15ch.sym # of pins=33
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/dff15ch.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/dff15ch.sch
+.subckt dff15ch avdd dvss clk out0 in0 out1 in1 out2 in2 out3 in3 out4 in4 out5 in5 out6 in6 out7 in7 out8 in8 out9 in9 out10 in10
++ out11 in11 out12 in12 out13 in13 out14 in14
+*.PININFO out0:O out1:O out2:O out3:O out4:O out5:O out6:O out7:O in0:I in1:I in2:I in3:I in4:I in5:I in6:I in7:I out8:O out9:O
+*+ out10:O out11:O out12:O out13:O out14:O in8:I in9:I in10:I in11:I in12:I in13:I in14:I avdd:I dvss:I clk:I
+x1 clk in0 dvss dvss avdd avdd out0 sky130_fd_sc_hvl__dfxtp_1
+x2 clk in1 dvss dvss avdd avdd out1 sky130_fd_sc_hvl__dfxtp_1
+x3 clk in2 dvss dvss avdd avdd out2 sky130_fd_sc_hvl__dfxtp_1
+x4 clk in3 dvss dvss avdd avdd out3 sky130_fd_sc_hvl__dfxtp_1
+x5 clk in4 dvss dvss avdd avdd out4 sky130_fd_sc_hvl__dfxtp_1
+x6 clk in5 dvss dvss avdd avdd out5 sky130_fd_sc_hvl__dfxtp_1
+x7 clk in6 dvss dvss avdd avdd out6 sky130_fd_sc_hvl__dfxtp_1
+x8 clk in7 dvss dvss avdd avdd out7 sky130_fd_sc_hvl__dfxtp_1
+x9 clk in8 dvss dvss avdd avdd out8 sky130_fd_sc_hvl__dfxtp_1
+x10 clk in9 dvss dvss avdd avdd out9 sky130_fd_sc_hvl__dfxtp_1
+x11 clk in10 dvss dvss avdd avdd out10 sky130_fd_sc_hvl__dfxtp_1
+x12 clk in11 dvss dvss avdd avdd out11 sky130_fd_sc_hvl__dfxtp_1
+x13 clk in12 dvss dvss avdd avdd out12 sky130_fd_sc_hvl__dfxtp_1
+x14 clk in13 dvss dvss avdd avdd out13 sky130_fd_sc_hvl__dfxtp_1
+x15 clk in14 dvss dvss avdd avdd out14 sky130_fd_sc_hvl__dfxtp_1
+.ends
+
+
+* expanding   symbol:  pcell1scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell1scs.sch
+.subckt pcell1scs avdd pbias pcbias sw_b sw_bn iout_n iout
+*.PININFO pbias:I pcbias:I sw_b:I avdd:I iout:O iout_n:O sw_bn:I
+XM1 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM2 net2 pcbias net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 m=1
+XM3 iout sw_b net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 m=1
+XM4 iout_n sw_bn net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  ncell1scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell1scs.sch
+.subckt ncell1scs iout ioutn swn sw ncbias nbias avss
+*.PININFO sw:I ncbias:I nbias:I avss:I iout:O ioutn:O swn:I
+XM8 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM9 net2 ncbias net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM1 iout sw net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM2 ioutn swn net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  ncell256scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell256scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell256scs.sch
+.subckt ncell256scs iout ioutn swn sw ncbias nbias avss
+*.PININFO sw:I ncbias:I nbias:I avss:I iout:O ioutn:O swn:I
+XM8 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=256
+XM9 net2 ncbias net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=256
+XM1 iout sw net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=256
+XM2 ioutn swn net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=256
+.ends
+
+
+* expanding   symbol:  pcell256scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell256scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell256scs.sch
+.subckt pcell256scs avdd pbias pcbias sw_b sw_bn iout_n iout
+*.PININFO pbias:I pcbias:I sw_b:I avdd:I iout:O iout_n:O sw_bn:I
+XM1 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=6 nf=1 m=256
+XM2 net2 pcbias net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 m=256
+XM3 iout sw_b net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 m=256
+XM4 iout_n sw_bn net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 m=256
+.ends
+
+.end

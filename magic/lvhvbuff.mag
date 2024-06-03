@@ -1,0 +1,39 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717439242
+<< error_s >>
+rect 0 0 200 5
+rect 0 -28 228 -23
+rect 14 -996 228 -972
+rect 0 -1024 200 -1000
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use sky130_fd_sc_hvl__lsbuflv2hv_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 0 0 1 -1600
+box -66 -43 2178 1671
+use sky130_fd_sc_hvl__inv_4  x2 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 2178 0 1 -1643
+box -66 -43 834 897
+use sky130_fd_sc_hvl__inv_8  x3 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 3012 0 1 -1686
+box -66 -43 1506 897
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 dvdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 avdd
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 blv_in
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 bhv_out
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 dvss
+port 4 nsew
+<< end >>

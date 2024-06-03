@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717439242
+<< error_s >>
+rect 111 -198 157 -172
+rect 83 -226 185 -200
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+use sky130_fd_pr__pfet_g5v0d10v5_243UAW  XM6
+timestamp 1717439242
+transform 1 0 263 0 1 1002
+box -358 -1497 358 1497
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 avdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 iref
+port 1 nsew
+<< end >>

@@ -1,0 +1,142 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717439242
+<< error_p >>
+rect 3815 358178 3832 361555
+rect 3869 358178 3886 361609
+<< error_s >>
+rect 3815 357034 3832 358178
+rect 3686 356882 3698 357004
+rect 3774 356918 3832 357034
+rect 3869 356918 3886 358178
+rect 3774 356882 4458 356918
+rect 3784 356853 4458 356882
+rect 3784 259031 4519 356853
+rect 4966 259031 5013 356806
+rect 5020 259031 5067 356752
+rect 3784 258936 5140 259031
+rect 3784 258812 5640 258936
+rect 3784 203383 5695 258812
+rect 3193 -3018 3210 -2984
+rect 3211 -3070 5695 203383
+rect 3211 -3104 5640 -3070
+rect 5649 -3104 5713 -3070
+rect 3211 -3490 5695 -3104
+rect 5713 -3200 5717 -3166
+rect 5713 -3268 5717 -3234
+rect 5713 -3382 5717 -3348
+rect 5713 -3450 5717 -3416
+rect 3182 -3542 5695 -3490
+rect 3173 -3708 3180 -3558
+rect 3182 -3708 5761 -3542
+rect 3182 -3772 3206 -3708
+rect 3211 -3772 5761 -3708
+rect 3182 -3858 5761 -3772
+rect 3211 -3944 5761 -3858
+rect 3211 -6323 5695 -3944
+rect 3802 -6353 5695 -6323
+rect 3803 -6388 5695 -6353
+rect 4393 -6448 5695 -6388
+rect 4424 -6453 5695 -6448
+rect 4548 -6471 5695 -6453
+rect 4984 -6482 5695 -6471
+rect 4984 -6518 5658 -6482
+rect 5169 -6536 5658 -6518
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+use ncell256scs  x1
+timestamp 1717439242
+transform 1 0 3276 0 1 -3858
+box -65 -2660 2364 360776
+use pcell256scs  x2
+timestamp 1717439242
+transform 1 0 3277 0 1 -3858
+box -95 -2780 2484 672584
+use sky130_fd_sc_hvl__nand2_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 0 0 1 -3600
+box -66 -43 546 897
+use sky130_fd_sc_hvl__inv_1  x4 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 1284 0 1 -3686
+box -66 -43 354 897
+use sky130_fd_sc_hvl__and2_1  x5 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 546 0 1 -3643
+box -66 -43 738 897
+use sky130_fd_sc_hvl__inv_1  x6
+timestamp 1710522493
+transform 1 0 1638 0 1 -3729
+box -66 -43 354 897
+use sky130_fd_sc_hvl__nand2_1  x7
+timestamp 1710522493
+transform 1 0 1992 0 1 -3772
+box -66 -43 546 897
+use sky130_fd_sc_hvl__and2_1  x8
+timestamp 1710522493
+transform 1 0 2538 0 1 -3815
+box -66 -43 738 897
+use sky130_fd_sc_hvl__inv_4  x9 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 3278 0 1 -3858
+box -66 -43 834 897
+use sky130_fd_sc_hvl__inv_16  x10 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
+timestamp 1710522493
+transform 1 0 4112 0 1 -3901
+box -66 -43 2754 897
+use sky130_fd_sc_hvl__inv_4  x11
+timestamp 1710522493
+transform 1 0 6866 0 1 -3944
+box -66 -43 834 897
+use sky130_fd_sc_hvl__inv_16  x12
+timestamp 1710522493
+transform 1 0 7700 0 1 -3987
+box -66 -43 2754 897
+use sky130_fd_sc_hvl__inv_4  x13
+timestamp 1710522493
+transform 1 0 10454 0 1 -4030
+box -66 -43 834 897
+use sky130_fd_sc_hvl__inv_16  x14
+timestamp 1710522493
+transform 1 0 11288 0 1 -4073
+box -66 -43 2754 897
+use sky130_fd_sc_hvl__inv_4  x15
+timestamp 1710522493
+transform 1 0 14042 0 1 -4116
+box -66 -43 834 897
+use sky130_fd_sc_hvl__inv_16  x16
+timestamp 1710522493
+transform 1 0 14876 0 1 -4159
+box -66 -43 2754 897
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 iout
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 avdd
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 pbias
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 ioutn
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 sw
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 pcbias
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 idir_sel
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 ncbias
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 nbias
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 avss
+port 9 nsew
+<< end >>

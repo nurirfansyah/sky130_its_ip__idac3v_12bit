@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717439242
+<< error_s >>
+rect 5151 370 5209 522
+rect 111 -1398 157 -1372
+rect 83 -1426 185 -1400
+rect 2738 -1629 2755 -8
+rect 2792 -1678 2809 -62
+rect 3359 -1724 3376 -62
+rect 3413 -1773 3430 -8
+rect 3939 -70 3997 82
+rect 4625 -34 4683 82
+rect 3980 -1819 3997 -70
+rect 3998 -70 4063 -34
+rect 3998 -128 4149 -70
+rect 3998 -1819 4092 -128
+rect 3998 -1885 4063 -1819
+rect 4559 -1914 4683 -34
+rect 4759 -1748 4770 0
+rect 4559 -1950 4672 -1914
+rect 4625 -1968 4672 -1950
+rect 5192 -1979 5209 370
+rect 5210 370 5275 406
+rect 5210 312 5361 370
+rect 5210 -1979 5304 312
+rect 6428 -154 6573 -143
+rect 6428 -188 6536 -154
+rect 6428 -200 6573 -188
+rect 5210 -2045 5275 -1979
+rect 5783 -2074 5830 -241
+rect 6428 -259 6486 -200
+rect 5837 -2128 5884 -295
+rect 6362 -2139 6486 -259
+rect 6562 -1973 6573 -373
+rect 6362 -2175 6475 -2139
+rect 6428 -2193 6475 -2175
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use sky130_fd_pr__nfet_g5v0d10v5_YYAQYD  XM1
+timestamp 1717439242
+transform 1 0 4326 0 1 -992
+box -328 -958 328 958
+use sky130_fd_pr__pfet_g5v0d10v5_243UAW  XM2
+timestamp 1717439242
+transform 1 0 4917 0 1 -548
+box -358 -1497 358 1497
+use sky130_fd_pr__pfet_g5v0d10v5_UUGBNZ  XM3
+timestamp 1717439242
+transform 1 0 1363 0 1 -598
+box -1458 -1097 1458 1097
+use sky130_fd_pr__pfet_g5v0d10v5_FGF6VM  XM4
+timestamp 1717439242
+transform 1 0 3084 0 1 -893
+box -358 -897 358 897
+use sky130_fd_pr__pfet_g5v0d10v5_243UAW  XM5
+timestamp 1717439242
+transform 1 0 3705 0 1 -388
+box -358 -1497 358 1497
+use sky130_fd_pr__nfet_g5v0d10v5_PXXNGC  XM7
+timestamp 1717439242
+transform 1 0 5538 0 1 -852
+box -328 -1258 328 1258
+use sky130_fd_pr__nfet_g5v0d10v5_YYAQYD  XM8
+timestamp 1717439242
+transform 1 0 6129 0 1 -1217
+box -328 -958 328 958
+use sky130_fd_pr__pfet_g5v0d10v5_FG5HVM  XM9
+timestamp 1717439242
+transform 1 0 6720 0 1 -1173
+box -358 -1097 358 1097
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 avdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 pbias
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 vgref
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 pcbias
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 avss
+port 4 nsew
+<< end >>
