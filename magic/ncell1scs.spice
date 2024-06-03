@@ -1,0 +1,19 @@
+* NGSPICE file created from ncell1scs.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_D8TNYB a_n158_n300# a_n100_n388# a_100_n300#
++ a_n292_n522#
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n292_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_BHMQGH a_n158_n600# a_n100_n688# a_100_n600#
++ a_n292_n822#
+X0 a_100_n600# a_n100_n688# a_n158_n600# a_n292_n822# sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=1
+.ends
+
+.subckt ncell1scs iout ioutn sw ncbias nbias avss swn
+Xsky130_fd_pr__nfet_g5v0d10v5_D8TNYB_0 avss nbias m1_583_n1672# avss sky130_fd_pr__nfet_g5v0d10v5_D8TNYB
+XXM1 iout sw m1_1239_n2272# avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+XXM2 m1_1239_n2272# swn ioutn avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+Xsky130_fd_pr__nfet_g5v0d10v5_BHMQGH_0 m1_583_n1672# ncbias m1_1239_n2272# avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+.ends
+

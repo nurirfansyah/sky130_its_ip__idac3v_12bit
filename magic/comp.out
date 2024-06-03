@@ -1,0 +1,62 @@
+
+Cell icell1scs_sch.spice (1) disconnected node: proxyiout
+Cell icell1scs_sch.spice (1) disconnected node: proxyavdd
+Cell icell1scs_sch.spice (1) disconnected node: proxypbias
+Cell icell1scs_sch.spice (1) disconnected node: proxyioutn
+Cell icell1scs_sch.spice (1) disconnected node: proxysw
+Cell icell1scs_sch.spice (1) disconnected node: proxypcbias
+Cell icell1scs_sch.spice (1) disconnected node: proxyidir_sel
+Cell icell1scs_sch.spice (1) disconnected node: proxyncbias
+Cell icell1scs_sch.spice (1) disconnected node: proxynbias
+Cell icell1scs_sch.spice (1) disconnected node: proxyavss
+Subcircuit summary:
+Circuit 1: icell1scs                       |Circuit 2: icell1scs_sch.spice             
+-------------------------------------------|-------------------------------------------
+pcell1scs (1)                              |pcell1scs (1)                              
+sky130_fd_sc_hvl__nand2_1 (2)              |sky130_fd_sc_hvl__nand2_1 (2)              
+ncell1scs (1)                              |ncell1scs (1)                              
+sky130_fd_sc_hvl__inv_1 (2)                |sky130_fd_sc_hvl__inv_1 (2)                
+sky130_fd_sc_hvl__and2_1 (2)               |sky130_fd_sc_hvl__and2_1 (2)               
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: icell1scs                       |Circuit 2: icell1scs_sch.spice             
+-------------------------------------------|-------------------------------------------
+sw                                         |(no matching pin)                          
+idir_sel                                   |(no matching pin)                          
+ioutn                                      |(no matching pin)                          
+iout                                       |(no matching pin)                          
+pbias                                      |(no matching pin)                          
+pcbias                                     |(no matching pin)                          
+ncbias                                     |(no matching pin)                          
+nbias                                      |(no matching pin)                          
+avss                                       |(no matching pin)                          
+avdd                                       |(no matching pin)                          
+(no matching pin)                          |proxyiout                                  
+(no matching pin)                          |proxyavdd                                  
+(no matching pin)                          |proxypbias                                 
+(no matching pin)                          |proxyioutn                                 
+(no matching pin)                          |proxysw                                    
+(no matching pin)                          |proxypcbias                                
+(no matching pin)                          |proxyidir_sel                              
+(no matching pin)                          |proxyncbias                                
+(no matching pin)                          |proxynbias                                 
+(no matching pin)                          |proxyavss                                  
+iout                                       |(no matching pin)                          
+avdd                                       |(no matching pin)                          
+pbias                                      |(no matching pin)                          
+ioutn                                      |(no matching pin)                          
+sw                                         |(no matching pin)                          
+pcbias                                     |(no matching pin)                          
+idir_sel                                   |(no matching pin)                          
+ncbias                                     |(no matching pin)                          
+nbias                                      |(no matching pin)                          
+avss                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for icell1scs and icell1scs_sch.spice altered to match.
+Device classes icell1scs and icell1scs_sch.spice are equivalent.
+
+Final result: Top level cell failed pin matching.

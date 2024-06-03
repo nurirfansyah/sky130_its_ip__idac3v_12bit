@@ -1,0 +1,9 @@
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell1scs.sch
+.subckt ncell1scs iout ioutn swn sw ncbias nbias avss
+*.PININFO sw:I ncbias:I nbias:I avss:I iout:O ioutn:O swn:I
+XM8 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 m=1
+XM9 net2 ncbias net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM1 iout sw net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+XM2 ioutn swn net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 m=1
+.ends
+.end
