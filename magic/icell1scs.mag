@@ -1,21 +1,18 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717439433
+timestamp 1717440426
 << error_p >>
 rect 2622 -5415 2724 -5394
 rect 2650 -5443 2696 -5422
+<< error_s >>
+rect 4229 -6374 4276 -4741
+rect 4283 -6428 4330 -4795
+<< error_ps >>
 rect 3047 -6244 3094 -5200
 rect 3101 -6298 3148 -5146
-rect 3638 -6309 3685 -5118
-rect 3692 -6363 3739 -5118
-rect 4229 -6374 4276 -5118
-rect 4283 -6428 4330 -5118
-<< error_s >>
-rect 3638 -5118 3685 -4676
-rect 3692 -5118 3739 -4730
-rect 4229 -5118 4276 -4741
-rect 4283 -5118 4330 -4795
+rect 3638 -6309 3685 -4676
+rect 3692 -6363 3739 -4730
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
@@ -29,7 +26,7 @@ rect 0 -3200 200 -3000
 rect 0 -3600 200 -3400
 use pcell1scs  x1
 timestamp 1717434410
-transform 1 0 5878 0 1 -1338
+transform 1 0 4620 0 1 -4372
 box 710 -1488 3380 2844
 use ncell1scs  x2
 timestamp 1717439242
@@ -37,27 +34,27 @@ transform 1 0 2539 0 1 -3815
 box -65 -2660 2364 200
 use sky130_fd_sc_hvl__nand2_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1710522493
-transform 1 0 0 0 1 -3600
+transform 1 0 3490 0 1 -2469
 box -66 -43 546 897
 use sky130_fd_sc_hvl__inv_1  x4 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1710522493
-transform 1 0 1284 0 1 -3686
+transform 1 0 3070 0 1 -2469
 box -66 -43 354 897
 use sky130_fd_sc_hvl__and2_1  x5 $PDKPATH/libs.ref/sky130_fd_sc_hvl/mag
 timestamp 1710522493
-transform 1 0 546 0 1 -3643
+transform 1 0 1234 0 1 -2469
 box -66 -43 738 897
 use sky130_fd_sc_hvl__inv_1  x6
 timestamp 1710522493
-transform 1 0 1638 0 1 -3729
+transform 1 0 2038 0 1 -2469
 box -66 -43 354 897
 use sky130_fd_sc_hvl__nand2_1  x7
 timestamp 1710522493
-transform 1 0 1992 0 1 -3772
+transform 1 0 2458 0 1 -2469
 box -66 -43 546 897
 use sky130_fd_sc_hvl__and2_1  x8
 timestamp 1710522493
-transform 1 0 2540 0 1 -3815
+transform 1 0 4102 0 1 -2469
 box -66 -43 738 897
 << labels >>
 flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 iout
