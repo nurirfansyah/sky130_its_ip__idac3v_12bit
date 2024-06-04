@@ -1,0 +1,142 @@
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell16scs.sch
+**.subckt icell16scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.ipin avdd
+*.ipin pbias
+*.ipin sw
+*.ipin pcbias
+*.ipin idir_sel
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell8scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell8scs
+**.ends
+
+* expanding   symbol:  icell8scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell8scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell8scs.sch
+.subckt icell8scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.ipin avdd
+*.ipin pbias
+*.ipin sw
+*.ipin pcbias
+*.ipin idir_sel
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell4scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell4scs
+.ends
+
+
+* expanding   symbol:  icell4scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell4scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell4scs.sch
+.subckt icell4scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.ipin avdd
+*.ipin pbias
+*.ipin sw
+*.ipin pcbias
+*.ipin idir_sel
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell2scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell2scs
+.ends
+
+
+* expanding   symbol:  icell2scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell2scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell2scs.sch
+.subckt icell2scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.ipin avdd
+*.ipin pbias
+*.ipin sw
+*.ipin pcbias
+*.ipin idir_sel
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+x1 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell1scs
+x2 iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss icell1scs
+.ends
+
+
+* expanding   symbol:  icell1scs.sym # of pins=10
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/icell1scs.sch
+.subckt icell1scs iout avdd pbias ioutn sw pcbias idir_sel ncbias nbias avss
+*.ipin avdd
+*.ipin pbias
+*.ipin pcbias
+*.ipin sw
+*.ipin idir_sel
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+x3 sw net1 avss avss avdd avdd net2 sky130_fd_sc_hvl__nand2_1
+x5 idir_sel sw avss avss avdd avdd net3 sky130_fd_sc_hvl__and2_1
+x4 idir_sel avss avss avdd avdd net1 sky130_fd_sc_hvl__inv_1
+x6 sw avss avss avdd avdd net4 sky130_fd_sc_hvl__inv_1
+x7 net1 net4 avss avss avdd avdd net5 sky130_fd_sc_hvl__nand2_1
+x1 avdd pbias pcbias net2 net5 ioutn iout pcell1scs
+x2 iout ioutn net6 net3 ncbias nbias avss ncell1scs
+x8 net4 idir_sel avss avss avdd avdd net6 sky130_fd_sc_hvl__and2_1
+.ends
+
+
+* expanding   symbol:  pcell1scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/pcell1scs.sch
+.subckt pcell1scs avdd pbias pcbias sw_b sw_bn iout_n iout
+*.ipin pbias
+*.ipin pcbias
+*.ipin sw_b
+*.ipin avdd
+*.opin iout
+*.opin iout_n
+*.ipin sw_bn
+XM1 net1 pbias avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 pcbias net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 iout sw_b net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 iout_n sw_bn net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ncell1scs.sym # of pins=7
+** sym_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell1scs.sym
+** sch_path: /home/yohanes/gits/dsrt_2024/sky130_its_ip__idac3v_12bit/xschem/ncell1scs.sch
+.subckt ncell1scs iout ioutn swn sw ncbias nbias avss
+*.ipin sw
+*.ipin ncbias
+*.ipin nbias
+*.ipin avss
+*.opin iout
+*.opin ioutn
+*.ipin swn
+XM8 net1 nbias avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net2 ncbias net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 iout sw net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 ioutn swn net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

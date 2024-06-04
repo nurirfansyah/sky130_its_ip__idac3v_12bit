@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717448419
+timestamp 1717438773
 << nwell >>
 rect 1148 -522 1212 -322
 rect 1860 -522 1868 -322
@@ -148,11 +148,11 @@ rect 3122 -1480 3128 -1296
 rect 3180 -1480 3186 -1296
 rect 3122 -1488 3186 -1480
 use sky130_fd_pr__pfet_g5v0d10v5_243UAW  sky130_fd_pr__pfet_g5v0d10v5_243UAW_0
-timestamp 1717417325
+timestamp 1717438773
 transform 1 0 1782 0 1 359
 box -358 -1497 358 1497
 use sky130_fd_pr__pfet_g5v0d10v5_FGF6VM  sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0
-timestamp 1717417325
+timestamp 1717438773
 transform 1 0 1068 0 1 -241
 box -358 -897 358 897
 use sky130_fd_pr__pfet_g5v0d10v5_FGR8VM  sky130_fd_pr__pfet_g5v0d10v5_FGR8VM_0

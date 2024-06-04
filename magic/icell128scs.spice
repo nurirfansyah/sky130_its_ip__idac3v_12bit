@@ -1,0 +1,122 @@
+* NGSPICE file created from icell128scs.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_243UAW a_100_n1200# w_n358_n1497# a_n158_n1200#
++ a_n100_n1297#
+X0 a_100_n1200# a_n100_n1297# a_n158_n1200# w_n358_n1497# sky130_fd_pr__pfet_g5v0d10v5 ad=3.48 pd=24.58 as=3.48 ps=24.58 w=12 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGF6VM w_n358_n897# a_n158_n600# a_n100_n697#
++ a_100_n600#
+X0 a_100_n600# a_n100_n697# a_n158_n600# w_n358_n897# sky130_fd_pr__pfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_FGR8VM a_n100_n497# a_100_n400# w_n358_n697#
++ a_n158_n400#
+X0 a_100_n400# a_n100_n497# a_n158_n400# w_n358_n697# sky130_fd_pr__pfet_g5v0d10v5 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt pcell1scs avdd pbias pcbias sw_b sw_bn iout_n iout
+Xsky130_fd_pr__pfet_g5v0d10v5_243UAW_0 m1_1868_n522# avdd m1_1148_n522# pcbias sky130_fd_pr__pfet_g5v0d10v5_243UAW
+Xsky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0 avdd avdd pbias m1_1148_n522# sky130_fd_pr__pfet_g5v0d10v5_FGF6VM
+Xsky130_fd_pr__pfet_g5v0d10v5_FGR8VM_0 sw_bn iout_n avdd m1_1868_n522# sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+Xsky130_fd_pr__pfet_g5v0d10v5_FGR8VM_1 sw_b m1_1868_n522# avdd iout sky130_fd_pr__pfet_g5v0d10v5_FGR8VM
+.ends
+
+.subckt sky130_fd_sc_hvl__nand2_1 A B VGND VNB VPB VPWR Y
+X0 a_233_111# B VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.07875 pd=0.96 as=0.21375 ps=2.07 w=0.75 l=0.5
+X1 Y A a_233_111# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21375 pd=2.07 as=0.07875 ps=0.96 w=0.75 l=0.5
+X2 VPWR A Y VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.21 ps=1.78 w=1.5 l=0.5
+X3 Y B VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.4275 ps=3.57 w=1.5 l=0.5
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_D8TNYB a_n158_n300# a_n100_n388# a_100_n300#
++ a_n292_n522#
+X0 a_100_n300# a_n100_n388# a_n158_n300# a_n292_n522# sky130_fd_pr__nfet_g5v0d10v5 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_BHMQGH a_n158_n600# a_n100_n688# a_100_n600#
++ a_n292_n822#
+X0 a_100_n600# a_n100_n688# a_n158_n600# a_n292_n822# sky130_fd_pr__nfet_g5v0d10v5 ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=1
+.ends
+
+.subckt ncell1scs iout ioutn sw ncbias nbias swn avss
+Xsky130_fd_pr__nfet_g5v0d10v5_D8TNYB_0 avss nbias m1_583_n1672# avss sky130_fd_pr__nfet_g5v0d10v5_D8TNYB
+XXM1 iout sw m1_1239_n2272# avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+XXM2 m1_1239_n2272# swn ioutn avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+Xsky130_fd_pr__nfet_g5v0d10v5_BHMQGH_0 m1_583_n1672# ncbias m1_1239_n2272# avss sky130_fd_pr__nfet_g5v0d10v5_BHMQGH
+.ends
+
+.subckt sky130_fd_sc_hvl__inv_1 A VGND VNB VPB VPWR Y
+X0 Y A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.4275 ps=3.57 w=1.5 l=0.5
+X1 Y A VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.21375 pd=2.07 as=0.21375 ps=2.07 w=0.75 l=0.5
+.ends
+
+.subckt sky130_fd_sc_hvl__and2_1 A B VGND VNB VPB VPWR X
+X0 X a_30_107# VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.3156 ps=2 w=1.5 l=0.5
+X1 a_30_107# A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.0588 pd=0.7 as=0.1197 ps=1.41 w=0.42 l=0.5
+X2 X a_30_107# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.219225 ps=1.57 w=0.75 l=0.5
+X3 VPWR B a_30_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.3156 pd=2 as=0.0588 ps=0.7 w=0.42 l=0.5
+X4 VGND B a_183_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.219225 pd=1.57 as=0.0441 ps=0.63 w=0.42 l=0.5
+X5 a_183_107# A a_30_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.0441 pd=0.63 as=0.1113 ps=1.37 w=0.42 l=0.5
+.ends
+
+.subckt icell1scs pbias sw idir_sel ncbias ioutn avdd iout pcbias avss nbias
+Xx1 avdd pbias pcbias x3/Y x7/Y ioutn iout pcell1scs
+Xx3 sw x7/A avss avss avdd avdd x3/Y sky130_fd_sc_hvl__nand2_1
+Xx2 iout ioutn x5/X ncbias nbias x8/X avss ncell1scs
+Xx4 idir_sel avss avss avdd avdd x7/A sky130_fd_sc_hvl__inv_1
+Xx5 idir_sel sw avss avss avdd avdd x5/X sky130_fd_sc_hvl__and2_1
+Xx6 sw avss avss avdd avdd x8/A sky130_fd_sc_hvl__inv_1
+Xx7 x7/A x8/A avss avss avdd avdd x7/Y sky130_fd_sc_hvl__nand2_1
+Xx8 x8/A idir_sel avss avss avdd avdd x8/X sky130_fd_sc_hvl__and2_1
+.ends
+
+.subckt icell2scs x2/idir_sel x2/pbias x2/ncbias x2/pcbias x2/ioutn avdd iout sw VSUBS
++ x2/nbias
+Xx1 x2/pbias sw x2/idir_sel x2/ncbias x2/ioutn avdd iout x2/pcbias VSUBS x2/nbias
++ icell1scs
+Xx2 x2/pbias sw x2/idir_sel x2/ncbias x2/ioutn avdd iout x2/pcbias VSUBS x2/nbias
++ icell1scs
+.ends
+
+.subckt icell4scs x2/x2/idir_sel x2/x2/ioutn x2/sw x2/x2/pcbias x2/avdd x2/x2/nbias
++ x2/x2/pbias x2/x2/ncbias x2/iout VSUBS
+Xx1 x2/x2/idir_sel x2/x2/pbias x2/x2/ncbias x2/x2/pcbias x2/x2/ioutn x2/avdd x2/iout
++ x2/sw VSUBS x2/x2/nbias icell2scs
+Xx2 x2/x2/idir_sel x2/x2/pbias x2/x2/ncbias x2/x2/pcbias x2/x2/ioutn x2/avdd x2/iout
++ x2/sw VSUBS x2/x2/nbias icell2scs
+.ends
+
+.subckt icell8scs x2/x2/x2/pcbias x2/x2/x2/pbias x2/x2/x2/nbias x2/x2/x2/ncbias x2/x2/avdd
++ x2/x2/iout x2/x2/x2/idir_sel x2/x2/sw VSUBS x2/x2/x2/ioutn
+Xx1 x2/x2/x2/idir_sel x2/x2/x2/ioutn x2/x2/sw x2/x2/x2/pcbias x2/x2/avdd x2/x2/x2/nbias
++ x2/x2/x2/pbias x2/x2/x2/ncbias x2/x2/iout VSUBS icell4scs
+Xx2 x2/x2/x2/idir_sel x2/x2/x2/ioutn x2/x2/sw x2/x2/x2/pcbias x2/x2/avdd x2/x2/x2/nbias
++ x2/x2/x2/pbias x2/x2/x2/ncbias x2/x2/iout VSUBS icell4scs
+.ends
+
+.subckt icell16scs pbias sw ncbias pcbias avdd idir_sel ioutn nbias iout avss
+Xx1 pcbias pbias nbias ncbias avdd iout idir_sel sw avss ioutn icell8scs
+Xx2 pcbias pbias nbias ncbias avdd iout idir_sel sw avss ioutn icell8scs
+.ends
+
+.subckt icell32scs sw pcbias pbias idir_sel nbias avdd ncbias avss ioutn iout
+Xx1 pbias sw ncbias pcbias avdd idir_sel ioutn nbias iout avss icell16scs
+Xx2 pbias sw ncbias pcbias avdd idir_sel ioutn nbias iout avss icell16scs
+.ends
+
+.subckt icell64scs x2/idir_sel x2/sw x2/pcbias x2/ncbias x2/avdd x2/pbias x2/nbias
++ VSUBS x2/ioutn x2/iout
+Xx1 x2/sw x2/pcbias x2/pbias x2/idir_sel x2/nbias x2/avdd x2/ncbias VSUBS x2/ioutn
++ x2/iout icell32scs
+Xx2 x2/sw x2/pcbias x2/pbias x2/idir_sel x2/nbias x2/avdd x2/ncbias VSUBS x2/ioutn
++ x2/iout icell32scs
+.ends
+
+.subckt icell128scs
+Xx1 x2/x2/idir_sel x2/x2/sw x2/x2/pcbias x2/x2/ncbias x2/x2/avdd x2/x2/pbias x2/x2/nbias
++ VSUBS x2/x2/ioutn x2/x2/iout icell64scs
+Xx2 x2/x2/idir_sel x2/x2/sw x2/x2/pcbias x2/x2/ncbias x2/x2/avdd x2/x2/pbias x2/x2/nbias
++ VSUBS x2/x2/ioutn x2/x2/iout icell64scs
+.ends
+

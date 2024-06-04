@@ -1,16 +1,81 @@
 
-Cell icell1scs_sch.spice (1) disconnected node: proxyiout
-Cell icell1scs_sch.spice (1) disconnected node: proxyavdd
-Cell icell1scs_sch.spice (1) disconnected node: proxypbias
-Cell icell1scs_sch.spice (1) disconnected node: proxyioutn
-Cell icell1scs_sch.spice (1) disconnected node: proxysw
-Cell icell1scs_sch.spice (1) disconnected node: proxypcbias
-Cell icell1scs_sch.spice (1) disconnected node: proxyidir_sel
-Cell icell1scs_sch.spice (1) disconnected node: proxyncbias
-Cell icell1scs_sch.spice (1) disconnected node: proxynbias
-Cell icell1scs_sch.spice (1) disconnected node: proxyavss
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_243UAW in circuit pcell1scs (4)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGF6VM in circuit pcell1scs (4)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_FGR8VM in circuit pcell1scs (4)(2 instances)
+
 Subcircuit summary:
-Circuit 1: icell1scs                       |Circuit 2: icell1scs_sch.spice             
+Circuit 1: pcell1scs                       |Circuit 2: pcell1scs                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (4)           |sky130_fd_pr__pfet_g5v0d10v5 (4)           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pcell1scs                       |Circuit 2: pcell1scs                       
+-------------------------------------------|-------------------------------------------
+pbias                                      |pbias                                      
+pcbias                                     |pcbias                                     
+iout                                       |iout                                       
+iout_n                                     |iout_n                                     
+sw_b                                       |sw_b                                       
+sw_bn                                      |sw_bn                                      
+avdd                                       |avdd                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pcell1scs and pcell1scs are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hvl__nand2_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hvl__nand2_1 and sky130_fd_sc_hvl__nand2_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_D8TNYB in circuit ncell1scs (4)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_BHMQGH in circuit ncell1scs (4)(3 instances)
+
+Subcircuit summary:
+Circuit 1: ncell1scs                       |Circuit 2: ncell1scs                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (4)           |sky130_fd_pr__nfet_g5v0d10v5 (4)           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ncell1scs                       |Circuit 2: ncell1scs                       
+-------------------------------------------|-------------------------------------------
+nbias                                      |nbias                                      
+ncbias                                     |ncbias                                     
+ioutn                                      |ioutn                                      
+iout                                       |iout                                       
+swn                                        |swn                                        
+sw                                         |sw                                         
+avss                                       |avss                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ncell1scs and ncell1scs are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hvl__inv_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hvl__inv_1 and sky130_fd_sc_hvl__inv_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hvl__and2_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hvl__and2_1 and sky130_fd_sc_hvl__and2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell1scs                       |Circuit 2: icell1scs                       
 -------------------------------------------|-------------------------------------------
 pcell1scs (1)                              |pcell1scs (1)                              
 sky130_fd_sc_hvl__nand2_1 (2)              |sky130_fd_sc_hvl__nand2_1 (2)              
@@ -20,43 +85,209 @@ sky130_fd_sc_hvl__and2_1 (2)               |sky130_fd_sc_hvl__and2_1 (2)
 Number of devices: 8                       |Number of devices: 8                       
 Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: icell1scs                       |Circuit 2: icell1scs_sch.spice             
+Circuit 1: icell1scs                       |Circuit 2: icell1scs                       
 -------------------------------------------|-------------------------------------------
-sw                                         |(no matching pin)                          
-idir_sel                                   |(no matching pin)                          
-ioutn                                      |(no matching pin)                          
-iout                                       |(no matching pin)                          
-pbias                                      |(no matching pin)                          
-pcbias                                     |(no matching pin)                          
-ncbias                                     |(no matching pin)                          
-nbias                                      |(no matching pin)                          
-avss                                       |(no matching pin)                          
-avdd                                       |(no matching pin)                          
-(no matching pin)                          |proxyiout                                  
-(no matching pin)                          |proxyavdd                                  
-(no matching pin)                          |proxypbias                                 
-(no matching pin)                          |proxyioutn                                 
-(no matching pin)                          |proxysw                                    
-(no matching pin)                          |proxypcbias                                
-(no matching pin)                          |proxyidir_sel                              
-(no matching pin)                          |proxyncbias                                
-(no matching pin)                          |proxynbias                                 
-(no matching pin)                          |proxyavss                                  
-iout                                       |(no matching pin)                          
-avdd                                       |(no matching pin)                          
-pbias                                      |(no matching pin)                          
-ioutn                                      |(no matching pin)                          
-sw                                         |(no matching pin)                          
-pcbias                                     |(no matching pin)                          
-idir_sel                                   |(no matching pin)                          
-ncbias                                     |(no matching pin)                          
-nbias                                      |(no matching pin)                          
-avss                                       |(no matching pin)                          
+sw                                         |sw                                         
+idir_sel                                   |idir_sel                                   
+ioutn                                      |ioutn                                      
+iout                                       |iout                                       
+pbias                                      |pbias                                      
+pcbias                                     |pcbias                                     
+ncbias                                     |ncbias                                     
+nbias                                      |nbias                                      
+avss                                       |avss                                       
+avdd                                       |avdd                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists for icell1scs and icell1scs_sch.spice altered to match.
-Device classes icell1scs and icell1scs_sch.spice are equivalent.
+Cell pin lists are equivalent.
+Device classes icell1scs and icell1scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell2scs                       |Circuit 2: icell2scs                       
+-------------------------------------------|-------------------------------------------
+icell1scs (2)                              |icell1scs (2)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell2scs                       |Circuit 2: icell2scs                       
+-------------------------------------------|-------------------------------------------
+iout                                       |iout                                       
+avdd                                       |avdd                                       
+x2/pbias                                   |pbias **Mismatch**                         
+x2/ioutn                                   |ioutn **Mismatch**                         
+sw                                         |sw                                         
+x2/pcbias                                  |pcbias **Mismatch**                        
+x2/idir_sel                                |idir_sel **Mismatch**                      
+x2/ncbias                                  |ncbias **Mismatch**                        
+x2/nbias                                   |nbias **Mismatch**                         
+VSUBS                                      |avss **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for icell2scs and icell2scs altered to match.
+Device classes icell2scs and icell2scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell4scs                       |Circuit 2: icell4scs                       
+-------------------------------------------|-------------------------------------------
+icell2scs (2)                              |icell2scs (2)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell4scs                       |Circuit 2: icell4scs                       
+-------------------------------------------|-------------------------------------------
+x2/iout                                    |iout **Mismatch**                          
+x2/avdd                                    |avdd **Mismatch**                          
+x2/x2/pbias                                |pbias **Mismatch**                         
+x2/x2/ioutn                                |ioutn **Mismatch**                         
+x2/sw                                      |sw **Mismatch**                            
+x2/x2/pcbias                               |pcbias **Mismatch**                        
+x2/x2/idir_sel                             |idir_sel **Mismatch**                      
+x2/x2/ncbias                               |ncbias **Mismatch**                        
+x2/x2/nbias                                |nbias **Mismatch**                         
+VSUBS                                      |avss **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for icell4scs and icell4scs altered to match.
+Device classes icell4scs and icell4scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell8scs                       |Circuit 2: icell8scs                       
+-------------------------------------------|-------------------------------------------
+icell4scs (2)                              |icell4scs (2)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell8scs                       |Circuit 2: icell8scs                       
+-------------------------------------------|-------------------------------------------
+x2/x2/iout                                 |iout **Mismatch**                          
+x2/x2/avdd                                 |avdd **Mismatch**                          
+x2/x2/x2/pbias                             |pbias **Mismatch**                         
+x2/x2/x2/ioutn                             |ioutn **Mismatch**                         
+x2/x2/sw                                   |sw **Mismatch**                            
+x2/x2/x2/pcbias                            |pcbias **Mismatch**                        
+x2/x2/x2/idir_sel                          |idir_sel **Mismatch**                      
+x2/x2/x2/ncbias                            |ncbias **Mismatch**                        
+x2/x2/x2/nbias                             |nbias **Mismatch**                         
+VSUBS                                      |avss **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for icell8scs and icell8scs altered to match.
+Device classes icell8scs and icell8scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell16scs                      |Circuit 2: icell16scs                      
+-------------------------------------------|-------------------------------------------
+icell8scs (2)                              |icell8scs (2)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell16scs                      |Circuit 2: icell16scs                      
+-------------------------------------------|-------------------------------------------
+iout                                       |iout                                       
+avdd                                       |avdd                                       
+pbias                                      |pbias                                      
+ioutn                                      |ioutn                                      
+sw                                         |sw                                         
+pcbias                                     |pcbias                                     
+idir_sel                                   |idir_sel                                   
+ncbias                                     |ncbias                                     
+nbias                                      |nbias                                      
+avss                                       |avss                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes icell16scs and icell16scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell32scs                      |Circuit 2: icell32scs                      
+-------------------------------------------|-------------------------------------------
+icell16scs (2)                             |icell16scs (2)                             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell32scs                      |Circuit 2: icell32scs                      
+-------------------------------------------|-------------------------------------------
+iout                                       |iout                                       
+avdd                                       |avdd                                       
+pbias                                      |pbias                                      
+ioutn                                      |ioutn                                      
+sw                                         |sw                                         
+pcbias                                     |pcbias                                     
+idir_sel                                   |idir_sel                                   
+ncbias                                     |ncbias                                     
+nbias                                      |nbias                                      
+avss                                       |avss                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes icell32scs and icell32scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell64scs                      |Circuit 2: icell64scs                      
+-------------------------------------------|-------------------------------------------
+icell32scs (2)                             |icell32scs (2)                             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell64scs                      |Circuit 2: icell64scs                      
+-------------------------------------------|-------------------------------------------
+x2/iout                                    |iout **Mismatch**                          
+x2/avdd                                    |avdd **Mismatch**                          
+x2/pbias                                   |pbias **Mismatch**                         
+x2/ioutn                                   |ioutn **Mismatch**                         
+x2/sw                                      |sw **Mismatch**                            
+x2/pcbias                                  |pcbias **Mismatch**                        
+x2/idir_sel                                |idir_sel **Mismatch**                      
+x2/ncbias                                  |ncbias **Mismatch**                        
+x2/nbias                                   |nbias **Mismatch**                         
+VSUBS                                      |avss **Mismatch**                          
+---------------------------------------------------------------------------------------
+Cell pin lists for icell64scs and icell64scs altered to match.
+Device classes icell64scs and icell64scs are equivalent.
+
+Subcircuit summary:
+Circuit 1: icell128scs                     |Circuit 2: icell128scs_sch.spice           
+-------------------------------------------|-------------------------------------------
+icell64scs (2)                             |icell64scs (2)                             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: icell128scs                     |Circuit 2: icell128scs_sch.spice           
+-------------------------------------------|-------------------------------------------
+---------------------------------------------------------------------------------------
+Cell pin lists for icell128scs and icell128scs_sch.spice altered to match.
+Device classes icell128scs and icell128scs_sch.spice are equivalent.
 
 Final result: Top level cell failed pin matching.

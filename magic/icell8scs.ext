@@ -1,0 +1,245 @@
+timestamp 1717438951
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use icell4scs x1 1 0 0 0 1 0
+use icell4scs x2 1 0 14519 0 1 0
+node "m1_19010_n1314#" 1 576.714 19010 -1314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 185400 2254 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/li_4710_n2152#" 0.0220514
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/nbias" 0.101174
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/iout" 8.88178e-16
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/x2/avss" 2.47192
+cap "x1/x2/x1/x2/nbias" "x1/x2/x1/idir_sel" 2.77556e-17
+cap "x1/x2/x1/x2/iout" "x1/x2/x1/li_4710_n2152#" -1.42109e-14
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/li_4710_n2152#" 0.240276
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/x2/iout" 2.27374e-13
+cap "x1/x2/x1/x2/ncbias" "x1/x2/x1/li_4710_n2152#" 0.45048
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/ioutn" 3.44194
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/li_4710_n2152#" 5.67314
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/iout" 5.98569
+cap "x1/x2/x1/x2/avss" "x2/x1/x2/x2/swn" 0.0530471
+cap "x1/x2/x1/li_4710_n2152#" "x2/x1/x2/x2/sw" 2.91486
+cap "x1/x2/x1/x2/iout" "x1/x2/x1/x2/ioutn" 57.3217
+cap "x1/x2/x1/li_4710_n2152#" "x1/x2/x1/x2/ioutn" 10.165
+cap "x1/x2/x1/x2/iout" "x2/x1/x2/x2/sw" 0.724329
+cap "x1/x2/x1/li_4710_n2152#" "x1/x2/x1/x2/iout" 0.336027
+cap "x2/x1/x2/x2/swn" "x1/x2/x1/x2/ioutn" 0.372513
+cap "x1/x2/x1/li_4710_n2152#" "x2/x1/x2/x2/swn" 13.8644
+cap "x2/x1/x2/x2/swn" "x1/x2/x1/x2/iout" 2.0225
+cap "x2/x1/x2/x2/XM2/a_n158_n600#" "x1/x2/x1/li_4710_n2152#" 3.23557
+cap "x2/x1/x2/x2/XM2/a_n158_n600#" "x1/x2/x1/x2/iout" 0.709763
+cap "x1/x2/x1/x2/nbias" "x1/x2/x1/idir_sel" -4.44089e-16
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/idir_sel" 2.84217e-14
+cap "x1/x2/x1/x8/VPWR" "x1/x2/x1/x2/nbias" 1.11022e-16
+cap "x1/x2/x1/x2/iout" "x1/x2/x1/idir_sel" 3.55271e-15
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/idir_sel" -2.84217e-14
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x2/ioutn" 0.0218792
+cap "x2/x1/x2/x2/swn" "x1/x2/x1/x2/iout" 0.56131
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/ioutn" 0.332344
+cap "x1/x2/x1/x2/nbias" "x1/x2/x1/x8/X" 7.60148
+cap "x2/x1/x2/x2/swn" "x1/x2/x1/x2/ioutn" 0.309047
+cap "x1/x2/x1/x2/iout" "x1/x2/x1/x8/X" 0.239038
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x2/ncbias" 2.25563
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/x8/X" 3.89432
+cap "x1/x2/x1/x2/ncbias" "x1/x2/x1/idir_sel" -0.564103
+cap "x1/x2/x1/x2/ioutn" "x1/x2/x1/x2/iout" 2.30815
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/idir_sel" 1.15037
+cap "x1/x2/x1/x2/avss" "x2/x1/x2/x2/sw" 2.25563
+cap "x1/x2/x1/x2/avss" "x2/x1/x2/x2/XM2/a_n158_n600#" -5.68434e-14
+cap "x1/x2/x1/x2/nbias" "x1/x2/x1/x2/ncbias" -0.564103
+cap "x1/x2/x1/x2/ncbias" "x1/x2/x1/x8/X" 8.10632
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x2/nbias" 2.25563
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x8/X" 58.9467
+cap "x2/x1/x2/x2/XM2/a_n158_n600#" "x1/x2/x1/x8/X" 12.415
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x2/iout" 0.0331508
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x8/X" 15.5639
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/nbias" -0.554853
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/x8/X" 3.87676
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/iout" 0.512997
+cap "x1/x2/x1/x2/iout" "x1/x2/x1/idir_sel" -1.42109e-14
+cap "x2/x1/x2/x2/swn" "x1/x2/x1/x8/X" 11.1379
+cap "x1/x2/x1/x8/X" "x2/x1/x2/ncbias" 0.152812
+cap "x1/x2/x1/x7/A" "x1/x2/x1/x8/B" -5.68434e-14
+cap "x1/x2/x1/sw" "x1/x2/x1/x3/Y" 0.0189312
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x3/Y" -1.13687e-13
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/m1_3222_n5418#" 7.10543e-15
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x7/A" 8.53762e-14
+cap "x1/x2/x1/x3/A" "x2/x1/x2/x2/sw" 7.962e-05
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x3/Y" 0.89933
+cap "x1/x2/x1/x8/B" "x1/x2/x1/idir_sel" -4.44089e-16
+cap "x1/x2/x1/x7/A" "x1/x2/x1/x8/X" 1.73472e-18
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x2/avss" -7.54952e-15
+cap "x1/x2/x1/x7/A" "x1/x2/x1/x3/A" -5.68434e-14
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x8/A" -5.68434e-14
+cap "x1/x2/x1/x3/A" "x2/x1/x2/x5/a_30_107#" 0.00152977
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x8/B" 4.19664e-14
+cap "x2/x1/x2/x5/a_30_107#" "x1/x2/x1/x3/Y" 0.0149459
+cap "x1/x2/x1/x3/A" "x1/x2/x1/x2/avss" 0.0170458
+cap "x1/x2/x1/x7/A" "x1/x2/x1/m1_3222_n5418#" -3.46945e-18
+cap "x1/x2/x1/x3/A" "x1/x2/x1/idir_sel" -4.44089e-16
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x3/Y" 0.0096309
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/x3/Y" 0.0261026
+cap "x1/x2/x1/x7/A" "x1/x2/x1/x8/a_30_107#" 3.46945e-18
+cap "x1/x2/x1/x7/A" "x1/x2/x1/idir_sel" 0.00209469
+cap "x1/x2/x1/x3/A" "x1/x2/x1/sw" -4.44089e-16
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x3/A" -2.19269e-14
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/x8/a_30_107#" 20.4274
+cap "x1/x2/x1/x1/pcbias" "x1/x2/x1/sw" 399.949
+cap "x1/x2/x1/x8/X" "x1/x2/x1/x2/ncbias" 2.22045e-16
+cap "x1/x2/x1/m1_3222_n5418#" "x2/x1/x2/x5/a_30_107#" 1.83453
+cap "x1/x2/x1/m1_3242_n5190#" "x1/x2/x1/sw" 0.11737
+cap "x1/x2/x1/x8/B" "x1/x2/x1/x1/avdd" 2.03578
+cap "x1/x2/x1/x1/pcbias" "x1/x2/x1/m1_3222_n5418#" 3.37397
+cap "x1/x2/x1/x8/X" "x1/x2/x1/sw" 7.19877
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/idir_sel" 0.578445
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/m1_3242_n5190#" 0.0823366
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/sw" 337.14
+cap "x1/x2/x1/x3/A" "x1/x2/x1/idir_sel" 0.00788591
+cap "x1/x2/x1/x8/a_30_107#" "x2/x1/x2/x5/a_30_107#" 0.685502
+cap "x1/x2/x1/x8/X" "x2/x1/x2/x2/sw" 29.1099
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/m1_3222_n5418#" 42.7785
+cap "x1/x2/x1/x1/pbias" "x2/x1/x2/x5/a_30_107#" 5.55112e-17
+cap "x1/x2/x1/x1/avdd" "x2/x1/x2/x2/sw" -2.84217e-14
+cap "x1/x2/x1/x3/Y" "x1/x2/x1/sw" 0.0462949
+cap "x1/x2/x1/x8/B" "x1/x2/x1/x2/ncbias" 2.22045e-16
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x8/a_30_107#" 5.05137
+cap "x1/x2/x1/x2/avss" "x2/x1/x2/x5/a_30_107#" 0.54177
+cap "x1/x2/x1/x7/A" "x1/x2/x1/idir_sel" 0.00586385
+cap "x1/x2/x1/x3/Y" "x2/x1/x2/x2/sw" 0.920087
+cap "x1/x2/x1/x8/B" "x1/x2/x1/sw" 0.820445
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/pbias" 1.55431e-15
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x8/A" 7.10543e-15
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x8/X" 7.77368
+cap "x1/x2/x1/idir_sel" "x2/x1/x2/x5/a_30_107#" 8.52651e-14
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x1/avdd" -0.122307
+cap "x1/x2/x1/x8/B" "x2/x1/x2/x2/sw" 0.245883
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/m1_3242_n5190#" 0.0353915
+cap "x1/x2/x1/m1_3222_n5418#" "x1/x2/x1/sw" 58.1401
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/x8/X" 61.8011
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/idir_sel" 15.7558
+cap "x1/x2/x1/x8/a_183_107#" "x1/x2/x1/sw" 0.0700891
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/m1_3222_n5418#" 0.748476
+cap "x1/x2/x1/x8/a_30_107#" "x1/x2/x1/sw" 3.10105
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/sw" -5.55112e-17
+cap "x1/x2/x1/x8/X" "x2/x1/x2/x5/a_183_107#" 0.287215
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x2/ncbias" 2.66454e-15
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/x3/Y" 0.0129728
+cap "x2/x1/x2/x2/sw" "x1/x2/x1/x8/a_30_107#" 1.52768
+cap "x1/x2/x1/x8/X" "x2/x1/x2/x5/a_30_107#" 28.5272
+cap "x1/x2/x1/x8/A" "x1/x2/x1/sw" 0.101957
+cap "x1/x2/x1/x1/avdd" "x2/x1/x2/x5/a_30_107#" 0.967833
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/sw" 0.872684
+cap "x1/x2/x1/x1/pcbias" "x1/x2/x1/x1/avdd" -101.374
+cap "x1/x2/x1/x8/B" "x1/x2/x1/idir_sel" 20.4781
+cap "x1/x2/x1/x3/A" "x1/x2/x1/sw" 0.108825
+cap "x1/x2/x1/x8/A" "x2/x1/x2/x2/sw" 0.142154
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x8/X" 60.4006
+cap "x1/x2/x1/x2/avss" "x2/x1/x2/x2/sw" 2.7675
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/sw" 1.55434
+cap "x1/x2/x1/x3/A" "x2/x1/x2/x2/sw" 0.00530743
+cap "x1/x2/x1/x2/avss" "x1/x2/x1/x8/a_30_107#" 0.580453
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/m1_3222_n5418#" 13.0248
+cap "x1/x2/x1/x8/B" "x2/x1/x2/x5/a_30_107#" 0.0332466
+cap "x1/x2/x1/idir_sel" "x2/x1/x2/x2/sw" 1.10526
+cap "x1/x2/x1/sw" "x1/x2/x1/x8/VGND" 0.0294131
+cap "x1/x2/x1/x8/X" "x2/x1/x2/x7/B" 0.000833152
+cap "x1/x2/x1/idir_sel" "x1/x2/x1/sw" -5.68434e-14
+cap "x1/x2/x1/x8/B" "x1/x2/x1/sw" 0.0948238
+cap "x1/x2/x1/sw" "x1/x2/x1/m1_3222_n5418#" 1.41305
+cap "x2/x1/x2/x7/B" "x1/x2/x1/x8/VGND" 0.0024299
+cap "x1/x2/x1/sw" "x1/x2/x1/x8/a_30_107#" 0.124497
+cap "x1/x2/x1/x8/VPWR" "x1/x2/x1/sw" 0.641334
+cap "x1/x2/x1/x8/A" "x1/x2/x1/sw" 0.0163904
+cap "x1/x2/x1/x8/X" "x1/x2/x1/sw" 0.545911
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/idir_sel" -2.77556e-17
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/a_n158_n1200#" -5.68434e-14
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/a_n158_n1200#" "x1/x2/x1/m1_3242_n5190#" 2.22045e-16
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/x1/avdd" -2.27374e-13
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/sw" 1.11022e-16
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/m1_3242_n5190#" 0.0493273
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/avdd" 0.00879546
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/sw" 0.0418475
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x3/Y" 0.0130299
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/x1/avdd" 1.2322
+cap "x1/x2/x1/x1/pbias" "x2/x1/x2/x1/sw_bn" 0.0127833
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/pcbias" 0.664633
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/m1_3222_n5418#" 30.0987
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/m1_3222_n5418#" 15.3294
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/x1/pcbias" -0.564103
+cap "x1/x2/x1/x1/pbias" "x1/x2/x1/m1_3222_n5418#" 5.35551
+cap "x1/x2/x1/x1/pcbias" "x1/x2/x1/m1_3222_n5418#" 1.98154
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/m1_3222_n5418#" 13.4971
+cap "x1/x2/x1/x1/avdd" "x2/x1/x2/x1/w_2576_n506#" 12.9649
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/pbias" 0.0971943
+cap "x1/x2/x1/x1/avdd" "x2/x1/x2/x1/sw_bn" 1.45915
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/a_n158_n1200#" 2.27374e-13
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/li_3810_n2226#" 0.0147288
+cap "x1/x2/x1/x1/iout_n" "x1/x2/x1/x1/avdd" 7.77415
+cap "x1/x2/x1/x1/iout" "x1/x2/x1/x1/iout_n" 18.8464
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/iout" 67.9753
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/iout" 25.3497
+cap "x2/x1/x2/x1/sky130_fd_pr__pfet_g5v0d10v5_FGR8VM_0/a_n158_n400#" "x1/x2/x1/x1/iout" 2.2265
+cap "x2/x1/x2/x1/sw_b" "x1/x2/x1/x1/iout" 2.10754
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/li_3810_n2226#" 0.0325748
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/iout_n" 0.473214
+cap "x1/x2/x1/x1/avdd" "x1/x2/x1/x1/iout_n" 10.0384
+cap "x1/x2/x1/x1/avdd" "x2/x1/x2/x1/sw_bn" 1.67538
+cap "x2/x1/x2/x1/sw_b" "x1/x2/x1/x1/iout_n" 0.0671447
+cap "x1/x2/x1/x1/pbias" "x2/x1/x2/x1/sw_bn" 0.0319584
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n158_n600#" "x1/x2/x1/x1/iout_n" 4.72215
+cap "x2/x1/x2/x1/w_2576_n506#" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/w_n358_n1497#" 6.02842
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n100_n697#" "x1/x2/x1/x1/iout_n" 0.055813
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n100_n697#" "x2/x1/x2/x1/sw_bn" 1.18798
+cap "x2/x1/x2/x1/w_2576_n506#" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n158_n600#" 1.52041
+cap "x2/x1/x2/x1/w_2576_n506#" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n100_n697#" 0.518404
+cap "x1/x2/x1/x1/iout_n" "x2/x1/x2/x1/w_2576_n506#" 0.433382
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/iout" 0.558598
+cap "x1/x2/x1/x1/iout_n" "x1/x2/x1/x1/iout" 68.8918
+cap "x2/x1/x2/x1/w_2576_n506#" "x1/x2/x1/x1/iout" 14.0327
+cap "x2/x1/x2/x1/sw_bn" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n158_n600#" 0.000549871
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/w_n358_n1497#" "x2/x1/x2/x1/sw_bn" 0.518404
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n100_n697#" "x2/x1/x2/x1/sw_bn" 1.18798
+cap "x1/x2/x1/x1/iout_n" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n158_n600#" 4.74944
+cap "x1/x2/x1/x1/iout_n" "x2/x1/x2/x1/sw_bn" 0.31334
+cap "x1/x2/x1/x1/iout_n" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/w_n358_n1497#" 1.53953
+cap "x1/x2/x1/x1/iout_n" "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_FGF6VM_0/a_n100_n697#" 0.00262086
+cap "x1/x2/x1/x1/sky130_fd_pr__pfet_g5v0d10v5_243UAW_0/w_n358_n1497#" "x2/x1/x2/x1/w_2576_n506#" 6.02842
+merge "x2/x1/x2/x2/ncbias" "x2/x1/x2/ncbias" -81.7056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 -402 0 0 0 0 0 0 0 0 0 0
+merge "x2/x1/x2/ncbias" "x1/x2/x1/m1_3333_n2948#"
+merge "x1/x2/x1/m1_3333_n2948#" "x1/x2/x1/x2/ncbias"
+merge "x2/VSUBS" "x1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1/VSUBS" "VSUBS"
+merge "x2/x1/x2/pbias" "x2/x1/x2/x1/pbias" -81.2875 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 -402 0 0 0 0 0 0 0 0 0 0
+merge "x2/x1/x2/x1/pbias" "x1/x2/x1/m1_3614_n1116#"
+merge "x1/x2/x1/m1_3614_n1116#" "x1/x2/x1/x1/pbias"
+merge "x2/x1/iout" "x1/x2/x1/x1/iout" -363.726 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -804 0 0 0 0 0 0 0 0 0 0
+merge "x1/x2/x1/x1/iout" "x2/x1/x2/x2/iout"
+merge "x2/x1/x2/x2/iout" "x1/x2/x1/m1_3222_n5418#"
+merge "x1/x2/x1/m1_3222_n5418#" "x1/x2/x1/x2/iout"
+merge "x2/x1/x2/pcbias" "x1/x2/x1/m1_3638_n1344#" -123.401 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 -402 0 0 0 0 0 0 0 0 0 0
+merge "x1/x2/x1/m1_3638_n1344#" "x1/x2/x1/x1/pcbias"
+merge "x2/x1/avdd" "x1/x2/x1/m1_3194_n888#" -494.147 0 0 0 0 -22360 -1126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -350 -704 0 0 0 0 0 0 0 0 0 0
+merge "x1/x2/x1/m1_3194_n888#" "x1/x2/x1/x1/avdd"
+merge "x1/x2/x1/x1/avdd" "x2/x1/x2/x7/VPWR"
+merge "x2/x1/x2/x7/VPWR" "x2/x1/x2/x6/VPWR"
+merge "x2/x1/x2/x6/VPWR" "x1/x2/x1/x8/VPWR"
+merge "x2/x1/x2/x7/VGND" "x2/x1/x2/x6/VGND" -214.897 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -348 -700 0 0 0 0 0 0 0 0 0 0
+merge "x2/x1/x2/x6/VGND" "x1/x2/x1/x8/VGND"
+merge "x1/x2/x1/x8/VGND" "x2/x1/x2/avss"
+merge "x2/x1/x2/avss" "x1/x2/x1/m1_1168_n2492#"
+merge "x1/x2/x1/m1_1168_n2492#" "x1/x2/x1/x8/VNB"
+merge "x1/x2/x1/x8/VNB" "x2/x1/x2/x6/VNB"
+merge "x2/x1/x2/x6/VNB" "x1/x2/x1/x2/avss"
+merge "x2/x1/x2/nbias" "x1/x2/x1/m1_3333_n3176#" -81.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 -402 0 0 0 0 0 0 0 0 0 0
+merge "x1/x2/x1/m1_3333_n3176#" "x1/x2/x1/x2/nbias"
+merge "x2/x1/x2/idir_sel" "x1/x2/x1/idir_sel" -193.442 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -200 -402 0 0 0 0 0 0 0 0 0 0
+merge "x2/x1/x2/ioutn" "x1/x2/x1/x1/iout_n" -391.806 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -804 0 0 0 0 0 0 0 0 0 0
+merge "x1/x2/x1/x1/iout_n" "x2/x1/x2/x2/ioutn"
+merge "x2/x1/x2/x2/ioutn" "x1/x2/x1/m1_3242_n5190#"
+merge "x1/x2/x1/m1_3242_n5190#" "x1/x2/x1/x2/ioutn"
+merge "x2/x1/x2/sw" "x2/x1/sw" -570.279 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43600 -1236 0 0 0 0 0 0 0 0 0 0
+merge "x2/x1/sw" "x1/x2/x1/sw"
+merge "x1/x2/x1/sw" "m1_19010_n1314#"
